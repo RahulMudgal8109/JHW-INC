@@ -1,0 +1,774 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.aboutService {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(112.1deg, rgb(32, 38, 57, 0.6) 11.4%, rgb(63, 76, 119, 0.7) 70.2%), url(images/newimgee.webp);
+
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.aboutHeaderr1 {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(rgba(26, 24, 24, 0.973), rgba(61, 12, 12, 0.767)), url(images/services-bg2.jpg);
+    background-attachment: fixed;
+    width: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+}
+
+@media only screen and (max-width:768px) {
+    .aboutHeaderr1 {
+        overflow: hidden;
+        position: relative;
+        background-image: linear-gradient(rgba(26, 24, 24, 0.973), rgba(61, 12, 12, 0.767)), url(images/services-bg2.jpg);
+        background-attachment: fixed;
+        width: 100vw;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 80vh;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        text-align: left;
+    }
+}
+
+.about-content h2 {
+    font-size: 43px;
+    font-family: GothamPro-Bold;
+    color: #fff;
+    line-height: 55px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-contentt h1 {
+    font-size: 43px;
+    font-family: GothamPro-Bold;
+    color: #fff;
+    line-height: 55px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .3px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.about-content p {
+    font-size: 24px;
+    font-family: GothamPro-Light;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    letter-spacing: .3px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .about-content h2 {
+        font-size: 32px;
+        font-family: GothamPro-Bold;
+        color: #fff;
+        line-height: 25px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: .9px;
+        font-weight: 700;
+        font-family: 'Times New Roman', Times, serif;
+
+    }
+
+    .about-content p {
+        font-size: 19px;
+        font-family: GothamPro-Light;
+        color: #fff;
+        line-height: 20px;
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        letter-spacing: .3px;
+
+    }
+}
+
+
+.first-img
+{
+    
+    background-image: linear-gradient(rgb(22, 43, 100), rgba(27, 0, 148, 0.171)), url(images/one.webp);
+    width: 100%;
+    height: 102vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cbd6e2;
+    transition: 0.3s ease-in-out;
+   
+   
+}
+
+.second-img
+{
+    background-image: linear-gradient(rgb(2, 16, 63), rgba(55, 9, 240, 0.164)), url(images/two.webp);
+    width: 100%;
+    height: 102vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #cbd6e2;
+    
+}
+.first-img a,.second-img a
+{
+display: none;
+transition: 0.3s ease-in-out;
+}
+.first-img-text,.second-img-text
+{
+    transition: 0.4s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.first-img-text h1,h2,p
+{
+    
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.second-img-text h1,h2,p
+{
+    
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.second-img a{
+    display: none;
+}
+.first-img:hover .first-img-text{
+    transform: translateY(-15px);
+}
+.first-img:hover .first-img-text a{
+    display: block;
+}
+.second-img:hover .second-img-text{
+    transform: translateY(-15px);
+}
+.second-img:hover .second-img-text a{
+    display: block;
+}
+
+.aboutHeader1 {
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(images/services-bg.jpg);
+    background-attachment: fixed;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-design {
+    width: 300px;
+    height: 70px;
+    background-color: #4296b4;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: GothamPro-Black;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-design:hover {
+    background-color: transparent;
+    border: 1px solid #4296b4;
+    font-weight: 700;
+
+}
+
+.btn-designn {
+    width: 200px;
+    height: 60px;
+    background-color: #4296b4;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: GothamPro-Black;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-designn:hover {
+    background-color: transparent;
+    border: 1px solid #4296b4;
+    font-weight: 700;
+
+}
+
+.services-content-text1 {
+    border-right: 3px solid #D43028;
+
+}
+
+.services-content-text1 h5 {
+    color: rgba(10, 0, 0, 0.541);
+    font-family: monospace;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 27px;
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+
+@media screen and (max-width:992px) {
+    .services-content-text1 h5 {
+        font-size: 20px;
+    }
+
+}
+
+.services-content-image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-content-image1 img {
+    width: 80%;
+    height: 100%;
+}
+
+@media screen and(max-width:992px) {
+    .services-content-image1 img {
+        width: 50%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.differnt-services {
+    background-color: rgba(253, 227, 227, 0.527);
+}
+
+.differnt-services-heading h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: europa;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.2em;
+}
+
+.differnt-services-heading p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    color: rgba(31, 37, 38, .75);
+}
+
+.differnt-services-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.differnt-services-content img {
+    width: 300px;
+    height: 170px;
+}
+
+.differnt-services-content h3 {
+    font-family: europa;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.4em;
+    color: #1f2526
+}
+
+.differnt-services-content p {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    color: rgba(31, 37, 38, .75);
+    text-align: center;
+}
+
+.nav-label {
+    font-size: 24px;
+    font-weight: 100;
+    color: black;
+}
+
+.nav-items {
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(31, 37, 38, .4);
+    transition: 0.4s ease-in-out;
+}
+
+.nav-items:hover {
+
+    font-weight: 300;
+    color: black;
+}
+
+.it-solutions-content h3 {
+    color: #1f2526;
+    font-family: europa;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0px;
+    text-transform: none;
+    line-height: 1.2em;
+}
+
+.it-solutions-content p {
+    color: black;
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+}
+
+.btn-design-2 {
+    width: 180px;
+    height: 45px;
+    background-color: #4296b4;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: GothamPro-Black;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-design-2:hover {
+    background-color: transparent;
+    border: 1px solid #4296b4;
+    font-weight: 700;
+    color: black;
+
+}
+
+.services-description label {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.services-description-list {
+    font-size: 16px;
+    list-style-type: decimal;
+    margin: 2px;
+    line-height: 30px;
+    letter-spacing: 0.8px;
+}
+
+.connect-form input {
+    height: 50px;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    border-radius: 3px;
+    padding: 9px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.connect-form textarea {
+    height: 150px;
+    border: 1px solid #cbd6e2;
+    background-color: #f5f8fa;
+    border-radius: 3px;
+    padding: 9px 10px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 22px;
+}
+
+.review-card-img {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.review-card-img img {
+    width: 40%;
+    height: 40%;
+}
+
+.review-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.review-card-text span {
+    display: block;
+
+}
+
+
+.commaaa {
+    font-size: 3.4em;
+    display: block;
+    text-align: left;
+    margin-left: 1rem;
+    opacity: 0.6;
+}
+
+.review-card-text p {
+    margin-top: 1px;
+    color: rgb(5, 1, 1);
+    font-size: 17px;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    font-style: italic;
+    opacity: 0.8;
+
+}
+
+.caption {
+    color: black;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.managed-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.managed-services h4 {
+    color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.managed-services p {
+    color: black;
+    opacity: 0.7;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.learn-about h5 {
+    color: black;
+    opacity: 0.8;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.learn-about p {
+    color: black;
+    opacity: 0.6;
+    font-weight: 200;
+    font-size: 16px;
+    letter-spacing: 0.9;
+    line-height: 30px;
+
+}
+
+.our-services {
+    background-color: #1c323b;
+    position: relative;
+}
+
+.our-services h6 {
+    color: white;
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 20px;
+}
+
+.our-services-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-services-list ul {
+    text-align: center;
+    color: white;
+}
+
+.our-services-list ul li {
+    font-family: proxima-nova;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    line-height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: decimal !important;
+}
+
+.consult {
+    padding: 2.5rem;
+}
+
+.consult-r {
+    background-color: black;
+    padding: 1rem;
+    border-radius: 20px;
+
+}
+
+.consult-text h2,
+p {
+
+    color: white;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    overflow-wrap: normal;
+}
+
+.servicesWeprovide {
+    background-image: url(images/services-bg3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 37rem;
+   
+
+}
+
+
+.servicesWeprovide-logo {
+    background-color: white;
+    position: relative;
+    height: 55vh;
+    transition: 0.4s ease-in-out;
+    border-radius: 20px 60px 30px 60px;
+    width: 85%;
+}
+
+
+.icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    bottom: 0%;
+    right: 0%;
+    background-color: blue;
+}
+@media only screen and (max-width:768px)
+{
+    .icon {
+        
+        height: 20px;
+    width: 40px;
+    border-radius: 0 0 30px 0;
+       
+    }
+}
+
+
+
+.servicesWeprovide-logo h2 {
+    display: inline !important;
+    font-weight: bolder;
+    font-size: 6.5rem;
+    color: black;
+    opacity: 0.1;
+}
+
+.servicesWeprovide-logo:hover h2 {
+   
+    opacity: 0.7;
+}
+.servicesWeprovide-logo:hover {
+    background-color: rgb(211, 94, 51);
+    cursor: pointer;
+
+}
+.servicesWeprovide-logo p {
+    color: black;
+    font-size: 1.1rem;
+    
+}
+.servicesWeprovide-logo h4 {
+    color: black;
+    font-size: 1.4rem;
+    
+}
+.servicesWeprovide-logo:hover p {
+    color: white;
+    
+}
+.servicesWeprovide-logo:hover h4 {
+    color: white;
+    
+}
+.servicesWeprovide-logo:hover .icon {
+    background-color: black;
+    color: red;
+    
+}
+
+
+
+@media only screen and (max-width:992px) {
+
+    
+    .servicesWeprovide-logo h2 {
+        display: inline !important;
+        font-weight: bolder;
+        font-size: 4.5rem;
+        color: black;
+        opacity: 0.1;
+    }
+
+    .servicesWeprovide-text,
+    h4 {
+        color: black;
+        font-size: 1rem;
+    }
+
+    .servicesWeprovide-logo p {
+        color: #1f2526;
+        font-size: 0.7rem;
+    }
+}
+@media only screen and (max-width:992px)
+{
+    .servicesWeprovide
+    {
+        height: 50rem;
+        margin-bottom: 5rem;
+    }
+    .servicesWeprovide-logo {
+       
+        height: 12rem;
+       
+    }
+}
+@media only screen and (max-width:1100px) {
+   
+
+    .servicesWeprovide-text,
+    h4 {
+        color: black;
+        font-size: 18px;
+    }
+
+    .servicesWeprovide-logo p {
+        color: #1f2526;
+        font-size: 12px;
+        font-weight: 600;
+    }
+}
+
+.servicesWeprovide-text {
+    transform: translateY(-45px);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+
+
+
+
+
+

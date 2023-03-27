@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+.aboutHeader
+{
+    overflow: hidden;
+    position: relative;
+background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),url(images/managedItServices.jpg);
+
+background-attachment: fixed;
+width: 99vw;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.about-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.about-content h1
+{
+    font-size: 44px;
+    font-family: GothamPro-Bold;
+    color: #fff;
+    line-height: 55px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3px;
+    font-weight: 600;
+}
+
+.about-content p{
+    font-size: 24px;
+    font-family: GothamPro-Light;
+    color: #fff;
+    line-height: 36px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    letter-spacing: .3px;
+    
+}
+@media only screen and (max-width:768px)
+{
+    .about-content h1
+{
+    
+    font-size: 30px;
+    font-family: GothamPro-Bold;
+    color: #fff;
+    line-height: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+    letter-spacing: .3px;
+    font-weight: 600;
+    
+}
+
+.about-content p{
+    font-size: 2px;
+    font-family: GothamPro-Light;
+    color: #fff;
+    line-height: 8px;
+    margin: 0;
+    padding: 1px;
+    width: 100%;
+   
+    letter-spacing: .3px;
+}
+.about-content
+{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+    
+}
+@media only screen and (max-width:1210px)
+{
+    .about-content h1
+{
+    font-size: 35px;
+    font-family: GothamPro-Bold;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: .3px;
+    font-weight: 600;
+}
+
+.about-content p{
+    font-size: 19px;
+    font-family: GothamPro-Light;
+    color: #fff;
+    line-height: 31px;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    letter-spacing: .3px;
+    
+}
+}
+.features-services
+{
+    background-color: #fff;
+    border: 2px solid white;
+    width: 99.9%;
+   
+    margin: 3px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 0 0 20px 0;
+    transition: 0.3s ease-in-out; 
+}
+.features-services:hover{
+    background-color: #033688;
+    border-radius: 0 0 0 20px;
+}
+.features-c h1{
+    position: relative;
+    padding: 8px;
+}
+
+.features-c h1::after
+{
+    position: absolute;
+    content: "";
+    background-color: white;
+    width: 30%;
+    height: 2px;
+    top: 105%;
+    left: 35%;
+}
+
+.features-services h4
+{
+    color: #0060ff;
+   
+   
+    letter-spacing: 0.4px;
+    line-height: 22px;
+    font-weight: 600;
+    line-height: 1.3em;
+}
+.features-services:hover.features-services h4{
+    color: white;
+    cursor: pointer;
+    
+    
+    
+}
+.features-services ul li
+{
+    
+    color: #444343;
+    list-style-type: disc;
+                            
+line-height: 1.68;
+font-weight: 700;
+   
+}
+.features-services:hover.features-services ul li{
+    color: white;
+    
+}
+.features-services button
+{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+   width: 80%;
+   height: 13%;
+   border: 2px solid rgb(15, 10, 0);
+   box-shadow: 10px solid grey;
+}
+@media only screen and (max-width:1200px)
+{
+    
+    .features-services h3
+{
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.features-services p
+{
+   
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+}
+@media only screen and (max-width:768px)
+{
+    .features-services
+{
+   
+    width: 100%;
+ 
+    margin: 3px;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+   
+   
+}
+}
+.side-icon
+{
+    position: absolute;
+    top: 100%;
+    left: 100%;
+    width: 3rem;
+    height: 3rem;
+    background-color: #0060ff;
+    transform: translate(-100%,-100%);
+    border-radius: 0 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.side-icon i{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.features-services:hover .side-icon
+{
+   
+    left: 0%;
+    
+    background-color: #ffffff;
+    transform: translate(5%,-100%);
+    border-radius: 0 0  0 20px;
+   
+}
+.features-services:hover .side-icon i
+{
+   
+   color: #0060ff;
+   
+}

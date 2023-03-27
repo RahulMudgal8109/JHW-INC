@@ -1,0 +1,379 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="icon" href="images/jhw inc 2.png" type="image/icon type">    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+        
+    <title>Document</title>
+    <style>
+        .gradient-custom-2 {
+            /* fallback for old browsers */
+            background: rgb(147, 147, 245);
+
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: -webkit-linear-gradient(to right, #6299ff, #16a2f3, #e986f7, #0c00b3);
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background: linear-gradient(to right, #5c3c80, #2723fc, #5153ff, #1125d4);
+        }
+
+
+        @media (min-width: 769px) {
+            .gradient-custom-2 {
+                border-top-right-radius: .3rem;
+                border-bottom-right-radius: .3rem;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;height: 4rem;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JHW INC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ml-left" style="margin-left:25vw;">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="services.html">IT for IT People</a></li>
+                                <li><a class="dropdown-item" href="services2.html">IT for Professionals</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                <li><a class="dropdown-item" href="#">Mega Menu Link</a></li> -->
+                            </ul>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled fs-5">Team</a>
+                    </li>
+                    <li class="nav-item mar-left me-3" > 
+                        <a class="nav-link text-white fs-5"  href="login.html"><i class="fa fa-user" style="font-size: 1.6rem;" aria-hidden="true"></i></a></li>
+                    
+                </ul>
+               
+                <div class="buttons">
+                    <button class="btn-hover color-1"><a href="contact.html" class="fs-5 d-flex justify-content-center"
+                            style="text-decoration: none; color:white;"><i class="fa fa-phone" aria-hidden="true" style="font-size: 1.6rem;"></i></a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+        <section class="h-100 gradient-form" style="background-color: #eee; margin-top: 2rem;">
+        <div class="container  h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-xl-10">
+                    <div class="card rounded-3 text-black">
+                        <div class="row g-0">
+                            <div class="col-lg-6">
+                                <div class="card-body">
+
+                                    <div class="text-center mt-5">
+                                        <img src="images/jhw inc 2.png" style="width: 250px;height: 120px;" alt="logo">
+                                        <h2 class="mb-5">We are The JHW INC Team</h2>
+                                    </div>
+
+                                    <form>
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1"
+                                                        for="form2Example11">Username:</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="email" style="height:3rem;width:20rem;"
+                                                        id="form2Example11" class="form-control"
+                                                        placeholder="Phone number or email address" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Phone :</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="phone" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Phone no here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Email :</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="email" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Email id here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Password
+                                                        :</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="password" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter a strong password Here" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Company:</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Company name here" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Business
+                                                        Type</label>
+                                                </div>
+                                                <div class="col-8">
+
+                                                    <select type="text" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Company Type here">
+                                                        <option disabled selected value> -- select an option --
+                                                        </option>
+                                                        <option value="registerd">Registerd</option>
+                                                        <option value="individual">Individual</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Business
+                                                        Category</label>
+                                                </div>
+                                                <div class="col-8">
+
+                                                    <select type="text" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Business Category here">
+                                                        <option disabled selected value> -- select an option --
+                                                        </option>
+                                                        <option value="registerd">Retail</option>
+                                                        <option value="individual">Goverment</option>
+                                                        <option value="individual">Online</option>
+                                                        <option value="individual">Artist</option>
+                                                        <option value="individual">Service Provider</option>
+                                                        <option value="individual">Financial Service</option>
+                                                        <option value="individual">Restrant</option>
+                                                        <option value="individual">Other</option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Which product
+                                                        are you intrested in</label>
+                                                </div>
+                                                <div class="col-8">
+
+                                                    <select type="text" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Company Type here">
+                                                        <option disabled selected value> -- select an option --
+                                                        </option>
+                                                        <option value="registerd">Online payments</option>
+                                                        <option value="individual">Offline payments</option>
+                                                        <option value="individual">International payments</option>
+                                                        <option value="individual">payroll </option>
+
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-outline mb-4 d-flex">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <label class="form-label mx-1" for="form2Example22">Business
+                                                        Category</label>
+                                                </div>
+                                                <div class="col-8">
+                                                    <input type="text" style="height:3rem;width:20rem;"
+                                                        id="form2Example22" class="form-control"
+                                                        placeholder="Enter your Company name here" />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="text-center pt-1 mb-3 pb-1 "
+                                            style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3"
+                                                style="width:14rem;" type="button">Sign up</button>
+                                            
+                                        </div>
+
+                                        
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 d-flex  gradient-custom-2 p-5">
+                                <div class="text-white px-1 py-2 p-md-3 mx-md-2"
+                                    style="background-attachment: fixed; margin-top:10rem;">
+                                    <h1 class="mb-4">We are more than just a company</h1>
+                                    <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                                        do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud
+                                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Company</li>
+                        <li class="ft">About</li>
+                        <li class="ft">Resources</li>
+                        <li class="ft">Carrer</li>
+                        <li class="ft">Contact</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Support</li>
+                        <li class="ft">Client portal</li>
+                        <li class="ft">Billing Portal</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Location</li>
+                        <li class="ft">It Service</li>
+                        <li class="ft">It Service</li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft fs-md-1 ">Location</li>
+                        <li class="ft ft fs-md-5 ">It Service </li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Lets chat</li>
+                        <li class="ft">Email us</li>
+                        <li class="ft">Follow BlackPoint</li>
+
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="ft">Join our mailing list</h4>
+                    <input type="email" placeholder="Email Address"
+                        style="border-radius:50px;height: 10px;width: 160px;">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+<script type="text/javascript" src="common.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+
+
+
+
+    </script>
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+
+</html>

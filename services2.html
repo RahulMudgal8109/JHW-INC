@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="services2.css">
+    <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="icon" href="images/jhw inc 2.png" type="image/icon type">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+   
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>JHW INC</title>
+    <style>
+        /* image url smooth with gradient */
+        /*.imgBox {
+            position: relative;
+            background-image:  url(images/aboutnewbg.webp);
+            width: 100%;
+            height: 10rem;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+
+        }
+
+        .imgBox::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image:  url(images/img2.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 10rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .imgBox:hover::before {
+            opacity: 0;
+
+        }
+        .imgBox:hover.content{
+            color: black;
+        }*/
+        /*.containeer {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    margin: auto;
+  }*/
+
+        .boxx {
+            position: relative;
+            width: 25rem;
+            height: 22rem;
+            background: rgb(150, 150, 150);
+            transition: 0.5s;
+            transform-style: preserve-3d;
+            overflow: hidden;
+            margin: 1rem;
+
+        }
+
+        .container:hover .boxx {
+            transform: rotateY(25deg);
+        }
+
+        .boxx:hover~.boxx {
+            transform: rotateY(-25deg);
+            cursor: pointer;
+        }
+
+        .boxx .content {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 70%;
+            left: 0%;
+            opacity: 0;
+
+            color: rgb(255, 251, 251);
+            transition: 0.8s ease-in-out;
+            overflow: hidden;
+
+        }
+
+        .boxx:hover.boxx .content {
+            opacity: 1;
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 45%;
+            left: 0%;
+            color: white;
+
+
+            overflow: hidden;
+            cursor: pointer;
+
+
+        }
+
+        /* .boxx .content h2 {
+            color: #fff;
+            transition: 0.5s;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            font-size: 20px;
+            transform: translateY(200px);
+            transition-delay: 0.3s;
+        }
+
+        .boxx:hover .content h2 {
+            transform: translateY(-10px);
+        }
+
+        .boxx .content p {
+            color: #fff;
+            transition: 0.5s;
+            font-size: 14px;
+            transform: translateY(200px);
+            transition-delay: 0.4s;
+        }
+
+        .boxx:hover .content p {
+            transform: translateY(0px);
+        }*/
+
+        .boxx:hover {
+            transform: rotateY(0deg) scale(1.05);
+            z-index: 1;
+            box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
+        }
+
+        .boxx .imgBox {
+            position: absolute;
+            background-image: url(images/aboutnewbg.webp);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%), url(images/img2.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox1 {
+            position: relative;
+            background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/service2.webp);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox1::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/service3.webp);
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox1 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox1::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox2 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/newimg5.webp);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox2::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/newimg1.jpeg);
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox2 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox2::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox3 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/aboutbg2.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox3::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/services6.jpg);
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox3 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox3::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox4 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/newimg8.webp);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox4::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/bg-image.jpg);
+
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox4 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox4::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox5 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/newimg5.webp);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox5::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/newimgee.webp);
+
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox5 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox5::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox6 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/main-img.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox6::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/services-bg2.jpg);
+
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox6 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox6::before {
+            opacity: 0;
+        }
+
+        .boxx .imgBox7 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/sde1.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox7::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/sde4.webp);
+
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox7 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox7::before {
+            opacity: 0;
+        }
+        .boxx .imgBox8 {
+            position: relative;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/services-bg2.jpg);
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+
+
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+        }
+
+        .boxx .imgBox8::before {
+            position: absolute;
+            content: "";
+            display: inline-block;
+
+            top: 0;
+            left: 0;
+
+            background-image: url(images/pattern-1.png);
+
+            background-size: 100%;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            object-fit: contain;
+
+            opacity: 1;
+            transition: opacity 1s;
+        }
+
+        .boxx:hover .imgBox8 {
+            opacity: 1;
+        }
+
+        .boxx:hover .imgBox8::before {
+            opacity: 0;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;height: 4rem;z-index: 1000;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JHW INC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ml-left" style="margin-left:25vw;">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white fs-5" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul>
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="services.html">IT for IT People</a></li>
+                                <li><a class="dropdown-item" href="services2.html">IT for Professionals</a></li>
+                                <!--<li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
+                                <li><a class="dropdown-item" href="#">Mega Menu Link</a></li> -->
+                            </ul>
+
+
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled fs-5">Team</a>
+                    </li>
+                    <li class="nav-item mar-left">
+                        <a class="nav-link text-white fs-5" href="login.html"><i class="fa fa-user"
+                                style="font-size: 1.6rem;" aria-hidden="true"></i></a>
+                    </li>
+
+                </ul>
+
+                <div class="buttons">
+                    <button class="btn-hover color-1"><a href="contact.html" class="fs-5 d-flex justify-content-center"
+                            style="text-decoration: none; color:white;"><i class="fa fa-phone" aria-hidden="true"
+                                style="font-size: 1.6rem;"></i></a></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section class="whoWeAre" style="margin-top:4rem;">
+        <div class="container">
+            <div class="row upperr-box">
+                <div class="heading">
+                    <h1>Who We Are</h1>
+                    <h5>We deal with the aspects of<br>
+                        professional IT Services</h5>
+                </div>
+
+                <div class="icon-one"></div>
+                <div class="icon-two"></div>
+                <div class="icon-three"></div>
+
+            </div>
+        </div>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <section class="pop-window">
+        <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i
+                class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+        <div class="wrapper">
+            <div class="headerr">
+                <h6>Let's Chat - Online</h6>
+            </div>
+            <div class="text-center p-2"> <span>Please fill out the form to start chat!</span> </div>
+            <div class="chat-form">
+                <input type="text" class="form-control" placeholder="Name">
+                <input type="text" class="form-control" placeholder="Email">
+                <textarea class="form-control" placeholder="Your Text Message"></textarea>
+                <button class="btn btn-success btn-block">Submit</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="animation">
+        <div id="carouselExampleIndicators" class="carousel slide servicesWeprovide p-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="row carousel-item active">
+                    <div class="containerr">
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-service1.webp">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-service2.webp">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services3.jpg">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services4.webp">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="row carousel-item ">
+                    <div class="containerr">
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services5.jpg">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services6.jpg">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services7.jpg">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <div class="imgBx">
+                                <img src="images/new-services8.jpg">
+                            </div>
+                            <div class="content">
+                                <div>
+                                    <h2>Image Title</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                        molestias quidem iusto.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <a class="carousel-control-prev text-dark" href="#carouselExampleIndicators" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black, i !important;"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section class="newDesign mt-5 mb-5 p-5">
+        <div class="container newDesign-container">
+            <div class="row newDesign-Row">
+                <div class="col-md-5 col-12">
+                    <h1>Getting you from vision to reality</h1>
+                </div>
+                <div class="col-md-7 col-12">
+                    <p>We <strong>listen, advise, design</strong> and deliver world-class, user-friendly IT products for
+                        clients in an
+                        agile way. How? Through our project experience and collective knowledge, we have established our
+                        way of bringing value to our clients. See for yourself:</p>
+                </div>
+            </div>
+            <div class="row newDesign-secondRow">
+                <div class="col-sm-3 col-6 circle">
+                    <h6 class="circle-test"><span class="circle-text">Strategic Analysis</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Planning & Design</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Solution Delivery</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Managing & Innovating</span></h6>
+                </div>
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!--<main title="Hover over the boxes to see the transition">
+        <div class="box linear-gradient"><p class="info-text code"></p></div>
+        <div class="box image-url"><p class="info-text code"></p></div>
+        
+          <div class="box linear-gradient-smooth"><p class="info-text code"></p></div>
+          <div class="box image-url-gradient-smooth"><p class="info-text code"></p></div>
+          <div class="box image-url-smooth"><p class="info-text code"></p></div>
+        
+        </main>-->
+
+
+    <section class="animation " style="margin-top: 13rem;">
+        <div id="carouselExampleIndicatorss" class="carousel slide servicesWeprovide p-5" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicatorss" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicatorss" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicatorss" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicatorss" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicatorss" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class=" carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox1">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox2">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox3">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox4">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class=" carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox5">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox6">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox7">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-5 col-12 m-2 d-flex justify-content-center align-items-center">
+                                <div class="boxx">
+                                    <div class="imgBox8">
+
+                                    </div>
+                                    <div class="content">
+                                        <div>
+                                            <h2>Image Title</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                                                accusamus
+                                                molestias quidem iusto.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev text-dark" href="#carouselExampleIndicatorss" role="button"
+                data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black, i !important;"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicatorss" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+
+
+
+
+
+    <footer style="margin-top:4rem;">
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Company</li>
+                        <li class="ft">About</li>
+                        <li class="ft">Resources</li>
+                        <li class="ft">Carrer</li>
+                        <li class="ft">Contact</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Support</li>
+                        <li class="ft">Client portal</li>
+                        <li class="ft">Billing Portal</li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Location</li>
+                        <li class="ft">It Service</li>
+                        <li class="ft">It Service</li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft fs-md-1 ">Location</li>
+                        <li class="ft ft fs-md-5 ">It Service </li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+                        <li class="ft">It Service </li>
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <ul>
+                        <li class="ft">Lets chat</li>
+                        <li class="ft">Email us</li>
+                        <li class="ft">Follow BlackPoint</li>
+
+
+                    </ul>
+                </div>
+                <div class="col-md-2 col-6">
+                    <h4 class="ft">Join our mailing list</h4>
+                    <input type="email" placeholder="Email Address"
+                        style="border-radius:50px;height: 10px;width: 160px;">
+
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script type="text/javascript" src="common.js"></script>  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+
+
+        $(".hover").mouseleave(
+            function () {
+                $(this).removeClass("hover");
+            }
+        );
+
+    </script>
+<script>
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+</script>
+
+
+</html>
