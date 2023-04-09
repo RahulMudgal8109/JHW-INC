@@ -228,7 +228,7 @@
   }
   .containerr .box .content h2 {
     color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
     text-transform: uppercase;
     margin-bottom: 5px;
     font-size: 20px;
@@ -240,7 +240,7 @@
   }
   .containerr .box .content p {
     color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
     font-size: 14px;
     transform: translateY(200px);
     transition-delay: 0.4s;
@@ -250,7 +250,7 @@
   }
   .newDesign
 {
-  background: linear-gradient(to right,#6d6c6d 0,#252425 100%);
+  background: linear-gradient(to right,#000000 0,#944794 100%);
   transition: 0.8s ease-in-out;
 }
 .newDesign:hover{
@@ -320,7 +320,7 @@ font-size: 1.3rem;
    border-radius: 50%;
    
     color: #fff;
-    background: linear-gradient(to right,#6d6c6d 0,#252425 100%);
+    background: linear-gradient(to right,#070307 0,#976997 100%);
     transition: clip-path 0.4s ease-in-out;
     cursor: pointer;
     z-index: 98;
@@ -357,7 +357,7 @@ font-size: 1rem;
 }
 
 .circle:hover .circle-test{
-  background: linear-gradient(to right,#000000 0,#e958e9 100%);
+  background: linear-gradient(to right,#2c2c2c 0,#e958e9 100%);
   clip-path: polygon(0% 50%,50% 0%,100% 50%,50% 100%);
 
 }
@@ -385,7 +385,7 @@ font-size: 1rem;
     color: #fff;
     padding: 30px;
     margin: 12px;
-    background: linear-gradient(to right,#6d6c6d 0,#252425 100%);
+    background: linear-gradient(to right,#000000 0,#ac31ac 100%);
 }
 .circle-text
 {
