@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="services2.css">
     <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -23,7 +24,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-   
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
@@ -97,11 +98,11 @@
         }
 
         .container:hover .boxx {
-            transform: rotateY(25deg);
+            transform: rotateY(5deg);
         }
 
         .boxx:hover~.boxx {
-            transform: rotateY(-25deg);
+            transform: rotateY(-5deg);
             cursor: pointer;
         }
 
@@ -109,7 +110,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            top: 70%;
+            top: 90%;
             left: 0%;
             opacity: 0;
 
@@ -499,6 +500,7 @@
         .boxx:hover .imgBox7::before {
             opacity: 0;
         }
+
         .boxx .imgBox8 {
             position: relative;
             background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), url(images/services-bg2.jpg);
@@ -545,9 +547,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;height: 4rem;z-index: 1000;">
+    <nav class="navbar navbar-expand-lg navbar-dark colorr" style="position:fixed;height: 4rem;z-index:100000000">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">JHW INC</a>
+            <a class="nav-linkk p-4" href="index.html"><img style="width:7rem;height:3.5rem;" src="images/1 (1).png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -556,19 +558,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ml-left" style="margin-left:25vw;">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="about.html">About</a>
+                        <a class="nav-link fs-5" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <ul>
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item d-none" href="#">Action</a></li>
+
                                 <li><a class="dropdown-item" href="services.html">IT for IT People</a></li>
                                 <li><a class="dropdown-item" href="services2.html">IT for Professionals</a></li>
                                 <!--<li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
@@ -579,30 +582,24 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled fs-5">Team</a>
+                        <a class="nav-link fs-5" href="teams.html">Team</a>
                     </li>
-                    <li class="nav-item mar-left">
-                        <a class="nav-link text-white fs-5" href="login.html"><i class="fa fa-user"
-                                style="font-size: 1.6rem;" aria-hidden="true"></i></a>
-                    </li>
+
+                  
 
                 </ul>
 
-                <div class="buttons">
-                    <button class="btn-hover color-1"><a href="contact.html" class="fs-5 d-flex justify-content-center"
-                            style="text-decoration: none; color:white;"><i class="fa fa-phone" aria-hidden="true"
-                                style="font-size: 1.6rem;"></i></a></button>
-                </div>
+
             </div>
         </div>
     </nav>
-    <section class="whoWeAre" style="margin-top:4rem;">
+    <section class="whoWeAre">
         <div class="container">
             <div class="row upperr-box">
                 <div class="heading">
                     <h1>Who We Are</h1>
-                    <h5>We deal with the aspects of<br>
-                        professional IT Services</h5>
+                    <h5>Our team has extensive experience in the IT industry, and we stay up to date with the latest
+                        technologies and trends to ensure we deliver the most effective solutions.</h5>
                 </div>
 
                 <div class="icon-one"></div>
@@ -643,131 +640,172 @@
             <div class="carousel-inner">
                 <div class="row carousel-item active">
                     <div class="containerr">
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-service1.webp">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
+                        <a class="ankur" href="#wrapper_right" data-li="angular">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-service1.webp">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>IT Consulting and Strategy</h2>
+                                        <p>In-depth analysis of business requirements to develop customized IT
+                                            strategies.
+                                            Expert advice on technology investments, digital transformation, and IT
+                                            infrastructure planning.
+
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-service2.webp">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
+                        </a>
+
+                        <a class="ankur" href="#wrapper_right" data-li="nodejs">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-service2.webp">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>IT Infrastructure Management</h2>
+                                        <p>Efficient management of servers, networks, and storage systems.
+                                            Optimization of IT infrastructure for better performance and
+                                            cost-effectiveness.
+
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services3.jpg">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
+                        </a>
+
+                        <a class="ankur" href="#wrapper_right" data-li="reactjs">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services3.jpg">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services4.webp">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
+                                <div class="content">
+                                    <div>
+                                        <h2>Software Development and Customization</h2>
+                                        <p>Tailored software solutions to meet specific business requirements.
+                                            Agile development methodologies for rapid delivery and flexibility.
+                                            Thorough testing and quality assurance.
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
                                 </div>
+
                             </div>
-                        </div>
+                        </a>
+                        <a class="ankur" href="#wrapper_right" data-li="vuejs">
+
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services4.webp">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>Data Backup and Recovery</h2>
+                                        <p>Secure and automated backup solutions to protect critical data.
+                                            Regular testing and verification of backup integrity.
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
+                                </div>
+
+                            </div>
+                        </a>
                     </div>
 
 
                 </div>
 
-                <div class="row carousel-item ">
-                    <div class="containerr">
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services5.jpg">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
+                <!--<div class="row carousel-item ">
+                    <a class="containerr">
+                        <a class="wrapper_left">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services5.jpg">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services6.jpg">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services7.jpg">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="imgBx">
-                                <img src="images/new-services8.jpg">
-                            </div>
-                            <div class="content">
-                                <div>
-                                    <h2>Image Title</h2>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
-                                        molestias quidem iusto.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>Network Setup and Maintenance</h2>
+                                        <p>Experienced professionals ensure a robust and secure network infrastructure.
+                                            Regular monitoring and maintenance to optimize network performance.
 
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
+                                </div>
 
+                            </div>
+                        </a>
+                        <a class="wrapper_left">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services6.jpg">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>Hardware and Software Support</h2>
+                                        <p>Skilled technicians provide prompt troubleshooting and repair services.
+                                            Comprehensive software support for various operating systems and
+                                            applications.
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="wrapper_left">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services7.jpg">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>Cybersecurity Solutions</h2>
+                                        <p>Advanced security measures, including firewalls, encryption, and intrusion
+                                            detection systems.
+                                            Regular security assessments to identify vulnerabilities and mitigate risks.
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
+                                </div>
+
+                            </div>
+                        </a>
+                        <a class="wrapper_left">
+                            <div class="box">
+                                <div class="imgBx">
+                                    <img src="images/new-services8.jpg">
+                                </div>
+                                <div class="content">
+                                    <div>
+                                        <h2>Image Title</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusamus
+                                            molestias quidem iusto.
+                                        </p>
+                                    </div>
+                                    <div class="bgg"></div>
+                                </div>
+
+                            </div>
+                        </a>
                 </div>
+
+
             </div>
-            <a class="carousel-control-prev text-dark" href="#carouselExampleIndicators" role="button"
-                data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black, i !important;"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-            </a>
+        </div>
+        <a class="carousel-control-prev text-dark" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="color: black, i !important;"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
         </div>
     </section>
 
@@ -776,7 +814,7 @@
 
 
 
-
+<!--
     <section class="newDesign mt-5 mb-5 p-5">
         <div class="container newDesign-container">
             <div class="row newDesign-Row">
@@ -822,7 +860,7 @@
         </main>-->
 
 
-    <section class="animation " style="margin-top: 13rem;">
+                <!--<section class="animation" id="animation" style="margin-top: 10rem;">
         <div id="carouselExampleIndicatorss" class="carousel slide servicesWeprovide p-5" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicatorss" data-slide-to="0" class="active"></li>
@@ -1007,74 +1045,292 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
+    </section>-->
+    </section>
+
+    
+
+
+
+    <div class="wrapper_right" id="wrapper_right" style="margin-top: 5rem;">
+
+        <div class="container-fluid">
+            <div class="item angular">
+                <div class="row ">
+                    <div class="col-6 p-5">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <img src="images/aboutbg1.jpg" style="border-radius: 10%; height:300px">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-6 ">
+                        <div class="row mt-3">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h2 class="">IT CONSULTING AND STRATEGY</h2>
+                                <ol type="1">
+                                    <li class="mt-3">
+                                        We take pride in being the best IT consulting and strategy provider in the industry. With a team of highly skilled professionals and a wealth of experience, we deliver unparalleled solutions to our clients.
+
+                                    </li>
+                                    <li class="mt-3">
+                                        At our core, we believe in understanding our clients' unique business needs and challenges. We work closely with them to develop customized strategies that align with their goals and drive their success. Our expertise spans a wide range of IT domains, including software development, cloud computing, cybersecurity, data analytics, and more.
+                                    </li>
+
+                                    <li class="mt-3">
+                                        What sets us apart is our relentless commitment to delivering excellence. We stay ahead of the curve by keeping up with the latest technological advancements and industry trends. This enables us to provide innovative and future-proof solutions that empower our clients to stay competitive in a rapidly evolving digital landscape.
+                                        
+                                    </li>
+                                   
+                                   
+                                </ol>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item nodejs" style="display: none;">
+                <div class="row ">
+                   
+                    <div class="col-6 ">
+                        <div class="row mt-3">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h2 class="">IT-Infrastructure-Management</h2>
+                                <ol type="1">
+                                    <li class="mt-3">
+                                        Our IT infrastructure management service boasts a team of highly skilled professionals with extensive experience in the industry. From certified network engineers to system administrators, we bring together a diverse range of expertise to handle all aspects of your IT infrastructure.
+
+                                    </li>
+                                    <li class="mt-3">
+                                        Over the years, we have consistently delivered top-notch IT infrastructure solutions to numerous satisfied clients. Our track record speaks for itself, showcasing our ability to meet and exceed expectations through reliable and efficient management practices.
+                                    </li>
+
+                                    <li class="mt-3">
+                                        Recognizing that each business has unique IT requirements, we pride ourselves on offering customized solutions. Our team thoroughly assesses your organization's needs and goals, crafting tailored strategies that optimize your infrastructure's performance and security.
+                                        
+                                    </li>
+                                   
+                                   
+                                </ol>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 p-5">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <img src="images/IT-Infrastructure-Management-2.jpg" style="border-radius: 10%; height:300px">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="item reactjs" style="display: none;">
+                <div class="row ">
+                    <div class="col-6 p-5">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <img src="images/customSoftware.jpg" style="border-radius: 10%; height:300px">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                       
+                    </div>
+                    <div class="col-6 ">
+                        <div class="row mt-3">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h2 class="">SOFTWARE DEVELOPMENT AND CUSTOMIZATION</h2>
+                                <ol type="1">
+                                    <li class="mt-3">
+                                        Delivering top-notch software is our utmost priority. We employ rigorous quality assurance practices to test and validate every aspect of the software thoroughly. By conducting extensive testing and debugging, we ensure that the final product meets the highest standards of performance, security, and usability in the industry.
+
+                                    </li>
+                                    <li class="mt-3">
+                                        Our software development and customization service is backed by a team of highly skilled and experienced developers. With a deep understanding of various programming languages, frameworks, and technologies, we deliver robust and innovative solutions tailored to your specific requirements.
+                                    </li>
+
+                                    <li class="mt-3">
+                                        We prioritize our clients' needs and goals throughout the software development process. 
+                                        
+                                    </li>
+                                   
+                                   
+                                </ol>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item vuejs" style="display: none;">
+                <div class="row ">
+                    
+                    <div class="col-6 ">
+                        <div class="row mt-3">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <h2 class="">Data Backup And recovery</h2>
+                                <ol type="1">
+                                    <li class="mt-3">
+                                        Our data backup and recovery service leverages cutting-edge technology to ensure the highest level of data protection and restoration capabilities. We utilize advanced backup solutions, encryption methods, and secure storage facilities to safeguard your critical data from potential threats and ensure its integrity.
+
+                                    </li>
+                                    <li class="mt-3">
+                                        We understand the significance of data redundancy and employ multiple backup strategies to safeguard your information. Our robust backup infrastructure ensures that your data is duplicated and stored across geographically diverse locations, reducing the risk of data loss and providing reliable recovery options.
+                                    </li>
+
+                                    <li class="mt-3">
+                                        Recognizing that each business has unique data requirements, we offer personalized backup solutions tailored to your organization's specific needs. Whether you need continuous real-time backups or periodic scheduled backups, our service can be customized to fit seamlessly into your existing infrastructure and workflows.
+                                        
+                                    </li>
+                                   
+                                   
+                                </ol>
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+
+                    </div>
+                    <div class="col-6 p-5">
+                        <div class="row">
+                            <div class="col-1"></div>
+                            <div class="col-10">
+                                <img src="images/data backup and recovery.jpg" style="border-radius: 10%; height:300px">
+                            </div>
+                            <div class="col-1"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section class="newDesign mt-5 mb-5 p-5">
+        <div class="container newDesign-container">
+            <div class="row newDesign-Row">
+                <div class="col-md-5 col-12">
+                    <h1>Getting you from vision to reality</h1>
+                </div>
+                <div class="col-md-7 col-12">
+                    <p>We <strong>listen, advise, design</strong> and deliver world-class, user-friendly IT products for
+                        clients in an
+                        agile way. How? Through our project experience and collective knowledge, we have established our
+                        way of bringing value to our clients. See for yourself:</p>
+                </div>
+            </div>
+            <div class="row newDesign-secondRow">
+                <div class="col-sm-3 col-6 circle">
+                    <h6 class="circle-test"><span class="circle-text">Strategic Analysis</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Planning & Design</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Solution Delivery</span></h6>
+                </div>
+                <div class="col-sm-3 col-6 circle ">
+                    <h6 class="circle-test"><span class="circle-text">Managing & Innovating</span></h6>
+                </div>
+            </div>
+
+
+        </div>
+
     </section>
 
 
 
 
 
-
-    <footer style="margin-top:4rem;">
-        <div class="container-fluid mt-5">
-            <div class="row">
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Company</li>
-                        <li class="ft">About</li>
-                        <li class="ft">Resources</li>
-                        <li class="ft">Carrer</li>
-                        <li class="ft">Contact</li>
-
-                    </ul>
+    
+    <footer style="margin-top: 10rem;">
+        <div class="container-footer w-container p-5">
+            <div class="w-row">
+                <div class="footer-column w-clearfix w-col w-col-4">
+                    <h3 class="footer-failory-name">Jhw Inc</h3>
+                    <p class="footer-description-failory"> <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">About
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Resources
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Career
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                    </p>
                 </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Support</li>
-                        <li class="ft">Client portal</li>
-                        <li class="ft">Billing Portal</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Location</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft fs-md-1 ">Location</li>
-                        <li class="ft ft fs-md-5 ">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Lets chat</li>
-                        <li class="ft">Email us</li>
-                        <li class="ft">Follow BlackPoint</li>
-
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h4 class="ft">Join our mailing list</h4>
-                    <input type="email" placeholder="Email Address"
-                        style="border-radius:50px;height: 10px;width: 160px;">
-
+                <div class="footer-column w-col w-col-8">
+                    <div class="w-row">
+                        <div class="w-col w-col-8">
+                            <div class="w-row">
+                                <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                                    <h3 class="footer-titles">Learn</h3>
+                                    <p class="footer-links"><a href="" target="_blank"><span class="footer-link">Failed
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Successful
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Blog</span></a>
+                                        <span><br></span><a href=""><span class="footer-link">Entrepreneurial
+                                                Tools<br></span></a>
+                                        <a href=""><span class="footer-link">Startup Cemetery<br></span></a>
+                                        <a href=""><span class="footer-link">Podcast</span></a><strong><br></strong>
+                                    </p>
+                                </div>
+                                <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                                    <h3 class="footer-titles">Other</h3>
+                                    <p class="footer-links"><a href="contact.html"><span class="footer-link">Contact Us
+                                                <br></span></a><a href=""><span class="footer-link">Open
+                                                Startup<br></span></a><a href=""><span class="footer-link"></span></a><a
+                                            href=""><span class="footer-link">Contribute<br></span></a><a href=""><span
+                                                class="footer-link">FAQ</span></a><strong><br></strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-center-mobile w-col w-col-4">
+                            <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg"
+                                    width="20" alt="Twitter icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg"
+                                    width="20" alt="Instagram icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg"
+                                    width="20" alt="Facebook Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg"
+                                    width="20" alt="LinkedIn Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg"
+                                    width="20" alt="Pinterest Icon" class=""></a>
+                            <p class="footer-description">Email me at: <a href=""><strong
+                                        class="link-email-footer">Lorem Ipsum</strong></a><br></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </footer>
 </body>
-<script type="text/javascript" src="common.js"></script>  
+<script type="text/javascript" src="common.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
@@ -1087,11 +1343,43 @@
         );
 
     </script>
+
+<script>
+    var li_elements = document.querySelectorAll(".ankur");
+    var item_elements = document.querySelectorAll(".item");
+    for (var i = 0; i < li_elements.length; i++) {
+        li_elements[i].addEventListener("click", function () {
+            li_elements.forEach(function (a) {
+                a.classList.remove("active");
+            });
+            this.classList.add("active");
+
+            var li_value = this.getAttribute("data-li");
+            console.log(li_value);
+            item_elements.forEach(function (item) {
+                item.style.display = "none";
+            });
+            if (li_value == "angular") {
+                document.querySelector("." + li_value).style.display = "block";
+            } else if (li_value == "nodejs") {
+                document.querySelector("." + li_value).style.display = "block";
+            } else if (li_value == "reactjs") {
+                document.querySelector("." + li_value).style.display = "block";
+            } else if (li_value == "vuejs") {
+                document.querySelector("." + li_value).style.display = "block";
+            } else {
+                console.log("");
+            }
+        });
+    }
+</script>
 <script>
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
     }
 </script>
+
+
 
 
 </html>

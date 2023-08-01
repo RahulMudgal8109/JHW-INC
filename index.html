@@ -5,17 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="cube.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="icon" href="images/jhw inc 2.png" type="image/icon type">
-    
+    <link rel="icon" href="images/1 (1).png" type="image/icon type">
+
+
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" />
+    <!-- MDB -->
+
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -25,17 +39,114 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-          
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
     <title>JHW INC</title>
+
     <style>
+        /*earth*/
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .sliderr {
+            width: 100%;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .slidess {
+            display: flex;
+            width: 300%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .slidee {
+            flex-shrink: 0;
+            width: 33%;
+            height: 100%;
+            margin: 10px;
+            background-color: transparent;
+            border-radius: 5px;
+        }
+
+
+        .webgl {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            outline: none;
+            width: 100px;
+            height: 400px;
+            z-index: -1;
+            overflow-x: hidden;
+            mix-blend-mode: exclusion;
+            z-index: 1;
+        }
+
+        .text-theme {
+            color: hsl(35%, 38.2%, 22.4%);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .bg-theme-light {
+            background-color: hsl(0, 0%, 99%);
+        }
+
+        .bg-theme-dark {
+            background-color: hsl(35, 38.2%, 22.4%) !important;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .bgg {
+            background: hsl(0, 0%, 95%);
+            overflow-x: hidden;
+        }
+
+        .txt h1 {
+            color: rgb(65, 55, 55);
+            z-index: 10;
+        }
+
+        .main-txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            z-index: 10;
+            width: 80%;
+
+        }
+
+        .nav-linkk {
+            color: rgb(0, 0, 0);
+            font-size: 1.2rem !important;
+            font-weight: 500 !important;
+            font-family: Georgia, 'Times New Roman', Times, serif !important;
+            padding: 2px;
+            margin: 5px;
+        }
+        
+        a:hover {
+    text-decoration: none!important;
+  }
     </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;height: 4rem;z-index:100000000">
+    <nav class="navbar navbar-expand-lg navbar-dark colorr" style="position:fixed;height: 4rem;z-index:100000000">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">JHW INC</a>
+            <a class="nav-linkk" href="index.html"><img style="width:7rem;height:3.5rem;"src="images/1 (1).png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -44,78 +155,137 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ml-left" style="margin-left:25vw;">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-linkk fs-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="about.html">About</a>
+                        <a class="nav-linkk fs-5" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-linkk dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <ul>
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item d-none" href="#">Action</a></li>
+
                                 <li><a class="dropdown-item" href="services.html">IT for IT People</a></li>
                                 <li><a class="dropdown-item" href="services2.html">IT for Professionals</a></li>
-                                <!--<li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
-                                <li><a class="dropdown-item" href="#">Mega Menu Link</a></li> -->
+
                             </ul>
 
 
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled fs-5">Team</a>
+                        <a class="nav-linkk fs-5" href="teams.html">Team</a>
                     </li>
-                    <li class="nav-item mar-left me-3">
-                        <a class="nav-link text-white fs-5" href="login.html"><i class="fa fa-user"
-                                style="font-size: 1.6rem;" aria-hidden="true"></i></a>
-                    </li>
+
+                    
 
                 </ul>
 
-                <div class="buttons">
+                <!--<div class="buttons">
                     <button class="btn-hover color-1"><a href="contact.html" class="fs-5 d-flex justify-content-center"
                             style="text-decoration: none; color:white;"><i class="fa fa-phone" aria-hidden="true"
                                 style="font-size: 1.6rem;"></i></a></button>
-                </div>
+                </div>-->
             </div>
         </div>
     </nav>
-    <section class="header">
+
+    <div class="container-fluid vh-100 bgg">
+
+
+    </div>
+    <canvas class="webgl">
+
+    </canvas>
+    <section class="main-txt">
+        <div class="d-flex align-items-center justify-content-center titel">
+            <div class="text-center txt">
+                <h1 class="display-5 text-uppercase fw-bold text-theme mb-4">
+                    JHW INC, Best IT Solution Provider Across The Globe
+                </h1>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--<section class="header" style="background-color: rgb(7, 5, 5);">
         <div class="container-fluid header-contentt">
             <div class="row header-content">
-                <div class="col-6  mt-md-0 mt-5 d-flex justify-content-center align-center">
-                    <div class="textt">
-                        <div class="s-text">IT'S NOT ABOUT </div>
-                        <br>
-                        <span class="l-text"><a href="#"
-                                style="color:white;text-decoration: none;"><marquee>TECHNOLOGY</marquee></a></span>
 
+                <div class="col-6 mt-md-0 mt-5 d-flex justify-content-center align-center upper">
+                    <!--<div class="textt">
+                        <div class="s-text">IT'S NOT ABOUT<br> TECHNOLOGY</div>
+                        <div class="s-text">IT'S ABOUT YOUR  BUSINESS</div>
+                        <br>
+                       
                     </div>
+                   
+                    <div class="globe">
+                        <figure class="surface">
+                            <a href="#d" class="beacon" data-location="Hawaii"></a>
+                            <a href="#d" class="beacon" data-location="Tonga"></a>
+                            <a href="#d" class="beacon" data-location="Madagascar"></a>
+                            <a href="#d" class="beacon" data-location="Cyprus"></a>
+                            <a href="#d" class="beacon" data-location="Dominican-Republic"></a>
+                        </figure>
+                    </div>-->
+
+                    <!--<div class="new-text">
+                        <h1 class="tec-text" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                            <strong><span>JHW INC</span></strong>
+                        </h1>
+                        <h1 class="tec-text d-flex flex-column justify-content-center align-items-center"
+                            style="font-family: Georgia, 'Times New Roman', Times, serif;"> BEST SOLUTIONS FOR
+                            <br><strong><span> YOUR BUSINESS</span></strong>
+                        </h1>
+                    </div>
+
 
                 </div>
-                <div class="col-6  mt-md-0 mt-5 d-flex justify-content-center align-center">
-                    <div class="textt">
-                        <div class="s-text">IT'S ABOUT YOUR </div>
-                        <br>
-                        <span class="l-text1"><a href="#" style="color:white;text-decoration: none;"><marquee>BUSINESS</marquee></a></span>
-
-
+                <div class="col-6  header-img pt-5">
+                    <div class="viewport">
+                        <div class="cube">
+                            <div class="side">
+                                <div class="cube-image"><a class="second" href="about.html">Software Services</a></div>
+                            </div>
+                            <div class="side">
+                                <div class="cube-image "><a class="second" href="about.html">Managed It Service</a>
+                                </div>
+                            </div>
+                            <div class="side">
+                                <div class="cube-image"><a class="second" href="about.html">Saas Consulting</a></div>
+                            </div>
+                            <div class="side">
+                                <div class="cube-image"><a class="second" href="about.html">Your Business Needs</a>
+                                </div>
+                            </div>
+                            <div class="side">
+                                <div class="cube-image"><a class="second" href="about.html">Software Services</a></div>
+                            </div>
+                            <div class="side">
+                                <div class="cube-image active"><a class="front" href="index.html">Jhw Inc</a></div>
+                            </div>
+                        </div>
                     </div>
+
+                   
+
 
                 </div>
             </div>
-        </div>
-        <div class="container-fluid u-header ">
+        </div>-->
+        <!--<div class="container-fluid u-header ">
             <div class="row">
                 <div class="col-1">
 
                 </div>
                 <div class="col-2 skew-border1">
-                    <h3 class="u-text">
+                    <h3 class="box-textt">
                         <a href="#" style="color:rgb(255, 249, 249);text-decoration: none;">
 
                             Your<br>Business<br>
@@ -125,29 +295,25 @@
                     </h3>
                 </div>
                 <div class="col-2 skew-border">
-                    <h6 class="u-text">
-                        <a href="managedItServices.html" style="color:rgb(255, 249, 249);text-decoration: none;">
-                            Managed IT
-                            <br>
-                            Services
-                        </a>
-
-                    </h6>
-                </div>
-                <div class="col-2 skew-border">
-                    <h6 class="u-text">
+                    <h6 class="box-textt">
                         <a href="#" style="color:rgb(255, 249, 249);text-decoration: none;"> Saas Consulting</a>
 
                     </h6>
                 </div>
                 <div class="col-2 skew-border">
-                    <h6 class="u-text">
+                    <h6 class="box-textt">
+                        <a href="#" style="color:rgb(255, 249, 249);text-decoration: none;"> Saas Consulting</a>
+2222
+                    </h6>
+                </div>
+                <div class="col-2 skew-border">
+                    <h6 class="box-textt">
                         <a href="#" style="color:rgb(255, 249, 249);text-decoration: none;"> Software Services</a>
 
                     </h6>
                 </div>
-                <div class="col-2 skew-border">
-                    <h6 class="u-text">
+                <div class="col-2 skew-border" style="z-index:1000;">
+                    <h6 class="box-textt">
                         <a href="#" style="color:rgb(255, 249, 249);text-decoration: none;"> Software Security</a>
 
 
@@ -157,11 +323,12 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
+  
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     <section class="pop-window">
-        <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i
-                class="fa fa-commenting-o comment"></i> <i class="fa fa-close close"></i> </label>
+        <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i class="fa fa-commenting comment"></i>
+            <i class="fa fa-close close"></i> </label>
         <div class="wrapper">
             <div class="headerr">
                 <h6>Let's Chat - Online</h6>
@@ -175,103 +342,336 @@
             </div>
         </div>
     </section>
-    
-        
-   
-    <section class="services p-5">
-        <div class="container p-5">
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <h3 class="s-service"> How we help our clients reach<br> greater success.</h3>
+      <!--
+    <section class="mx-5 mt-5 metaverse">
+        <div class="container-fluid">
+            <div class="row metaRow">
+                
+                <div class="col-3 skewBorder2">
+                    <a href="about.html"></a>
+                    <div class="metaverse-img" style="z-index:2;">
+                        <img class="metaImg" src="images/metaverse-img1.webp">
+                    </div>
+                    
+                    <div class="metaverse-text">
+                        <h3 class="d-flex justify-content-center align-items-center">VR/AR <br>SOLUTIONS</h3>
+                        <div class="metaverse-list">
+                            <ul>
+                                <li>Gamification Solution</li>
+                                <li>Training Solution</li>
+                                <li>Entertainment</li>
+                                <li>Virtual Tours</li>
+                                <li>360 Video Shooting</li>
+                            </ul>
+                        </div>
+                    </div>
+              
+                    <div class="bggg2"></div>
+                </a>
                 </div>
-                <div class="col-md-8 col-12">
-                    <p class="p-service mt-md-0 mt-5">Setting a goal is simple. Getting there is a different story.
-                        We’re eager to work with leaders
-                        driven by the promise of modernization but held back by its costs—both financial and human. No
-                        matter where you are in your journey, we’ll partner with you to provide the expertise and
-                        practical plans you need to successfully Navigate the Now and move your business forward. We’re
-                        committed to helping you—let’s build the perfect IT transformation solution together.</p>
+          
+                <div class="col-3 skewBorder2">
+                    <div class="metaverse-img">
+                        <img class="metaImg" src="images/metaverse-img2.webp">
+                    </div>
+                    <div class="metaverse-text">
+                        <h3 class="d-flex justify-content-center align-items-center">VR/AR <br>SOLUTIONS</h3>
+                        <div class="metaverse-list">
+                            <ul>
+                                <li>Gamification Solution</li>
+                                <li>Training Solution</li>
+                                <li>Entertainment</li>
+                                <li>Virtual Tours</li>
+                                <li>360 Video Shooting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bggg2"></div>
                 </div>
+               
+                <div class="col-3 skewBorder2">
+                    <div class="metaverse-img">
+                        <img class="metaImg" src="images/metaverse-img3.webp">
+                    </div>
+                    <div class="metaverse-text">
+                        <h3 class="d-flex justify-content-center align-items-center">VR/AR <br>SOLUTIONS</h3>
+                        <div class="metaverse-list">
+                            <ul>
+                                <li>Gamification Solution</li>
+                                <li>Training Solution</li>
+                                <li>Entertainment</li>
+                                <li>Virtual Tours</li>
+                                <li>360 Video Shooting</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <div class="bggg2"></div>
+                    
+                </div>
+                <div class="col-3 skewBorder2">
+                    <div class="metaverse-img">
+                        <img  class="metaImg" src="images/metaverse-img4.webp">
+                    </div>
+                   <a href="about.html"> 
+                    <div class="metaverse-text">
+                        <h3 class="d-flex justify-content-center align-items-center">VR/AR <br>SOLUTIONS</h3>
+                        <div class="metaverse-list">
+                            <ul>
+                                <li>Gamification Solution</li>
+                                <li>Training Solution</li>
+                                <li>Entertainment</li>
+                                <li>Virtual Tours</li>
+                                <li>360 Video Shooting</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                    </a>
+                    <div class="bggg2"></div>
+                </div>
+                
             </div>
-
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="services-content">
-                        <img src="images/new-services4.webp" style="width:100%;height:300px;">
-                        <div class="b-color">
+
+    </section>
+
+
+
+    <section class="services p-5">
+
+
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide sliderr" data-ride="carousel">
+            <div class="carousel-inner slidess">
+                <div class="carousel-item active slidee row d-flex justify-content-center align-items-center">
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/new-services4.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Cutting-edge Technology Solutions</h2>
+
+                                <h6>We leverage the latest technologies and tools to provide innovative and
+                                    state-of-the-art IT solutions tailored to meet your specific business needs.</h6>
+                                <a href="#">Learn More</a>
+
+                            </div>
+                            <div class="bggg"></div>
 
                         </div>
-                        <div class="services-content-text">
-                            <h2>Managed IT
-                                Services</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
-                            <a href="#">Learn More</a>
+
+
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/new-service2.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Industry Expertise</h2>
+
+                                <h6>Our team of experienced professionals possesses in-depth knowledge and expertise in
+                                    various industries, enabling us to deliver targeted and effective IT services that
+                                    align with your industry's requirements and challenges.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/newimg3.jpeg" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Customized Approach</h2>
+                                <h6>We understand that each client is unique, and we take a customized approach to
+                                    address your specific business objectives, ensuring that our IT services are
+                                    tailored to your organization's requirements and goals.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="slidee row d-flex justify-content-center align-items-center">
+                    <div class="col-md-4 col-12 ">
+                        <div class="services-content">
+                            <img src="images/newimg4.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Proven Track Record</h2>
+                                <h6>With a strong track record of successful projects and satisfied clients, we have
+                                    demonstrated our ability to deliver high-quality IT services that drive tangible
+                                    results and contribute to our clients' success.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/newimg5.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Agile and Collaborative Processes</h2>
+                                <h6>We embrace agile methodologies and foster a collaborative working environment to
+                                    ensure that we effectively collaborate with our clients, promoting transparency,
+                                    communication, and continuous feedback throughout the project lifecycle.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
                         </div>
 
                     </div>
 
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/newimg6.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Timely Delivery and Cost Efficiency</h2>
+                                <h6>We are committed to delivering projects on time and within budget, while maintaining
+                                    a high level of quality. Our efficient processes and effective project management
+                                    help optimize costs and ensure maximum value for your investment.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+                    </div>
+
+
                 </div>
-                <div class="col-lg-6 col-12 mt-lg-0 mt-2">
+                <div class="slidee row d-flex justify-content-center align-items-center">
+                    <div class="col-md-4 col-12 ">
+                        <div class="services-content">
+                            <img src="images/newimg4.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Exceptional Client Support</h2>
+                                <h6>Our dedicated support team is available to provide prompt assistance and resolve any
+                                    issues or concerns you may have. We prioritize exceptional client support to ensure
+                                    your satisfaction and build long-term partnerships.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/newimg5.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>Remote Patch management</h2>
+                                <h6>As a provider of the best remote patch management services, we offer a comprehensive
+                                    solution to ensure that our clients' systems are up to date, secure, and protected
+                                    against vulnerabilities. </h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-4 col-12">
+                        <div class="services-content">
+                            <img src="images/newimg6.webp" style="width:100%;height:300px;">
+                            <div class="b-color">
+
+                            </div>
+                            <div class="services-content-text">
+                                <h2>24 X 7 monitoring</h2>
+                                <h6>With our 24/7 support services, we are committed to being available around the clock
+                                    to assist our clients whenever they need us.</h6>
+                                <a href="#">Learn More</a>
+                            </div>
+                            <div class="bggg"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section class="newSection p-2 mt-5">
+        <div class="wrapIt">
+            
+       
+            <i id="left" class="fa fa-angle-left"></i>
+            <ul class="myCarousel">
+                <li class="myCard">
                     <div class="services-content">
                         <img src="images/new-service2.webp" style="width:100%;height:300px;">
                         <div class="b-color">
 
                         </div>
                         <div class="services-content-text">
-                            <h2>Saas Consulting</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
+                            <h2>Industry Expertise</h2>
+
+                            <h6>Our team of experienced professionals possesses in-depth knowledge and expertise in
+                                various industries, enabling us to deliver targeted and effective IT services that
+                                align with your industry's requirements and challenges.</h6>
                             <a href="#">Learn More</a>
                         </div>
+                        <div class="bggg"></div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-6 col-12">
+                </li>
+                <li class="myCard">
+                    <div class="services-content">
+                        <img src="images/happyPeople.jpg" style="width:100%;height:300px;">
+                        <div class="b-color">
+
+                        </div>
+                        <div class="services-content-text">
+                            <h2>Cutting-edge Technology Solutions</h2>
+
+                            <h6>We leverage the latest technologies and tools to provide innovative and
+                                state-of-the-art IT solutions tailored to meet your specific business needs.</h6>
+                            <a href="#">Learn More</a>
+
+                        </div>
+                        <div class="bggg"></div>
+
+                    </div>
+                </li>
+                <li class="myCard">
                     <div class="services-content">
                         <img src="images/newimg3.jpeg" style="width:100%;height:300px;">
                         <div class="b-color">
 
                         </div>
                         <div class="services-content-text">
-                            <h2>Software licensicing management</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
+                            <h2>Customized Approach</h2>
+                            <h6>We understand that each client is unique, and we take a customized approach to
+                                address your specific business objectives, ensuring that our IT services are
+                                tailored to your organization's requirements and goals.</h6>
                             <a href="#">Learn More</a>
                         </div>
+                        <div class="bggg"></div>
                     </div>
 
-                </div>
-                <div class="col-lg-6 col-12 mt-lg-0 mt-2">
-                    <div class="services-content">
-                        <img src="images/newimg4.webp" style="width:100%;height:300px;">
-                        <div class="b-color">
-
-                        </div>
-                        <div class="services-content-text">
-                            <h2>Software Security</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
-                            <a href="#">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-6 col-12">
-                    <div class="services-content">
-                        <img src="images/newimg5.webp" style="width:100%;height:300px;">
-                        <div class="b-color">
-
-                        </div>
-                        <div class="services-content-text">
-                            <h2>Remote Patch management</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
-                            <a href="#">Learn More</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-6 mt-lg-0 mt-2">
+                </li>
+                <li class="myCard">
                     <div class="services-content">
                         <img src="images/newimg6.webp" style="width:100%;height:300px;">
                         <div class="b-color">
@@ -279,100 +679,144 @@
                         </div>
                         <div class="services-content-text">
                             <h2>24 X 7 monitoring</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
+                            <h6>With our 24/7 support services, we are committed to being available around the clock
+                                to assist our clients whenever they need us.</h6>
                             <a href="#">Learn More</a>
                         </div>
+                        <div class="bggg"></div>
                     </div>
-                </div>
-            </div>
-            <div class="row mt-3">
-                <div class="col-lg-6 col-12">
+                </li>
+                <li class="myCard">
                     <div class="services-content">
-                        <img src="images/newimg7.webp" style="width:100%;height:300px;">
+                        <img src="images/newimg4.webp" style="width:100%;height:300px;">
                         <div class="b-color">
 
                         </div>
                         <div class="services-content-text">
-                            <h2>Application Services</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
+                            <h2>Exceptional Client Support</h2>
+                            <h6>Our dedicated support team is available to provide prompt assistance and resolve any
+                                issues or concerns you may have. We prioritize exceptional client support to ensure
+                                your satisfaction and build long-term partnerships.</h6>
                             <a href="#">Learn More</a>
                         </div>
+                        <div class="bggg"></div>
                     </div>
-
-                </div>
-                <div class="col-lg-6 col-12 mt-lg-0 mt-2">
+                </li>
+                <li class="myCard">
                     <div class="services-content">
-                        <img src="images/newimg8.webp" style="width:100%;height:300px;">
+                        <img src="images/newimg5.webp" style="width:100%;height:300px;">
                         <div class="b-color">
 
                         </div>
                         <div class="services-content-text">
-                            <h2>Application Services</h2>
-                            <h6>Maximize the ROI of your business-critical <br>enterprise applications.</h6>
+                            <h2>Agile and Collaborative Processes</h2>
+                            <h6>We embrace agile methodologies and foster a collaborative working environment to
+                                ensure that we effectively collaborate with our clients, promoting transparency,
+                                communication, and continuous feedback throughout the project lifecycle.</h6>
                             <a href="#">Learn More</a>
                         </div>
+                        <div class="bggg"></div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
+            <i id="right" class="fa fa-angle-right"></i>
         </div>
+
     </section>
 
-    <section class="client-trust">
+    <section class="client-trust p-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="d-md-flex justify-content-center align-center mt-5 ct">
                     WHY OUR CLIENT TRUST US
                 </div>
                 <div class="col-md-4 col-12 snip">
-                    <figure class="snip1559">
-                        <div class="profile-image"><img src="images/smallimg.webp" alt="profile-sample6" /></div>
-                        <figcaption>
-                            <h3>Indigo Violet</h3>
-                            <h5>Public Relations</h5>
-                            <p>The only skills I have the patience to learn are those that have no real application in
-                                life. </p>
-                            <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                                <a href="#"> <i class="ion-social-twitter"></i></a>
-                                <a href="#"> <i class="ion-social-vimeo"></i></a>
+                    <div class="upper-class">
+                        <div class="card front-face">
+                            <img
+                                src="images/happyPeople.jpg">
+                        </div>
+                        <div class="card back-face">
+                            <img
+                                src="images/happyPeople.jpg">
+                            <div class="info">
+                                <div class="title">
+                                    Leery Eleanor
+                                </div>
+                                <p>
+                                    JHW INC provides you the best services in the world . Highly qualified and
+                                    supportive team.
+                                </p>
                             </div>
-                        </figcaption>
-                    </figure>
+                            <ul>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="col-md-4 col-12 snip">
-                    <figure class="snip1559">
-                        <div class="profile-image"><img src="images/smallimg2.jpeg" alt="profile-sample6" /></div>
-                        <figcaption>
-                            <h3>Indigo Violet</h3>
-                            <h5>Public Relations</h5>
-                            <p>The only skills I have the patience to learn are those that have no real application in
-                                life. </p>
-                            <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                                <a href="#"> <i class="ion-social-twitter"></i></a>
-                                <a href="#"> <i class="ion-social-vimeo"></i></a>
+                    <div class="upper-class">
+                        <div class="card front-face">
+                            <img
+                                src="images/happyPeople2.jpg">
+                        </div>
+                        <div class="card back-face">
+                            <img
+                                src="images/happyPeople2.jpg">
+                            <div class="info">
+                                <div class="title">
+                                    Rahul Sharma
+                                </div>
+                                <p>
+                                    JHW INC provides you the best services in the world . Highly qualified and
+                                    supportive team.
+                                </p>
                             </div>
-                        </figcaption>
-                    </figure>
+                            <ul>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-4 col-12 snip">
-                    <figure class="snip1559">
-                        <div class="profile-image"><img src="images/smallimg3.jpeg" alt="profile-sample6" /></div>
-                        <figcaption>
-                            <h3>Indigo Violet</h3>
-                            <h5>Public Relations</h5>
-                            <p>The only skills I have the patience to learn are those that have no real application in
-                                life. </p>
-                            <div class="icons"><a href="#"><i class="ion-social-reddit"></i></a>
-                                <a href="#"> <i class="ion-social-twitter"></i></a>
-                                <a href="#"> <i class="ion-social-vimeo"></i></a>
+                    <div class="upper-class">
+                        <div class="card front-face">
+                            <img
+                                src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                        </div>
+                        <div class="card back-face">
+                            <img
+                                src="https://images.unsplash.com/photo-1492288991661-058aa541ff43?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80">
+                            <div class="info">
+                                <div class="title">
+                                    Jos Andreson
+                                </div>
+                                <p>
+                                    JHW INC provides you the best services in the world . Highly qualified and
+                                    supportive team.
+                                </p>
                             </div>
-                        </figcaption>
-                    </figure>
+                            <ul>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="clients">
+    <!--<section class="clients">
 
         <div class="row clients-data">
             <div class="col-md-1 col-0"></div>
@@ -499,69 +943,114 @@
         </div>
 
     </section>-->
+    <div class="container">
+
+        <div class="quality-select">
+            <button class="btn sd" style="display: none;">
+                SD
+            </button>
+            <button class="btn hd" style="display: none;">
+                HD
+            </button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <canvas class="webgl"></canvas>
+        </div>
+    </div>
+
+
     <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Company</li>
-                        <li class="ft">About</li>
-                        <li class="ft">Resources</li>
-                        <li class="ft">Carrer</li>
-                        <li class="ft">Contact</li>
-
-                    </ul>
+        <div class="container-footer w-container p-5">
+            <div class="w-row">
+                <div class="footer-column w-clearfix w-col w-col-4">
+                    <h3 class="footer-failory-name">Jhw Inc</h3>
+                    <p class="footer-description-failory"> <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">About
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Resources
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Career
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                    </p>
                 </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Support</li>
-                        <li class="ft">Client portal</li>
-                        <li class="ft">Billing Portal</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Location</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft fs-md-1 ">Location</li>
-                        <li class="ft ft fs-md-5 ">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Lets chat</li>
-                        <li class="ft">Email us</li>
-                        <li class="ft">Follow BlackPoint</li>
-
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h4 class="ft">Join our mailing list</h4>
-                    <input type="email" placeholder="Email Address"
-                        style="border-radius:50px;height: 10px;width: 160px;">
-
+                <div class="footer-column w-col w-col-8">
+                    <div class="w-row">
+                        <div class="w-col w-col-8">
+                            <div class="w-row">
+                                <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                                    <h3 class="footer-titles">Learn</h3>
+                                    <p class="footer-links"><a href="" target="_blank"><span class="footer-link">
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Successful
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Blog</span></a>
+                                        <span><br></span><a href=""><span class="footer-link">Entrepreneurial
+                                                Tools<br></span></a>
+                                        <a href=""><span class="footer-link">Startup Cemetery<br></span></a>
+                                        <a href=""><span class="footer-link">Podcast</span></a><strong><br></strong>
+                                    </p>
+                                </div>
+                                <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                                    <h3 class="footer-titles">Other</h3>
+                                    <p class="footer-links"><a href="contact.html"><span class="footer-link">Contact Us
+                                                <br></span></a><a href=""><span class="footer-link">Open
+                                                Startup<br></span></a><a href=""><span class="footer-link"></span></a><a
+                                            href=""><span class="footer-link">Contribute<br></span></a><a href=""><span
+                                                class="footer-link">FAQ</span></a><strong><br></strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-center-mobile w-col w-col-4">
+                            <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg"
+                                    width="20" alt="Twitter icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg"
+                                    width="20" alt="Instagram icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg"
+                                    width="20" alt="Facebook Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg"
+                                    width="20" alt="LinkedIn Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg"
+                                    width="20" alt="Pinterest Icon" class=""></a>
+                            <p class="footer-description">Email me at: <a href=""><strong
+                                        class="link-email-footer">Lorem Ipsum</strong></a><br></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </footer>
 
 
+
+
+
+
+
 </body>
-<script type="text/javascript" src="common.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+
+<!-- Three.js core -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<script type="text/javascript" src="3dCube.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
 
@@ -577,15 +1066,318 @@
 
     </script>
 <script>
-    window.onbeforeunload = function () {
-        window.scrollTo(0, 0);
-    }
+
+</script>
+
+<script type="text/javascript">
+    $(function () {
+        var sliderr = $('.sliderr');
+        var slidess = sliderr.find('.slidess');
+        var slideWidth = sliderr.width() / 3; // assumes 5 slides
+        var currentPosition = 0;
+
+        slidess.css('transform', 'translateX(' + currentPosition + 'px)');
+
+        $(window).on('wheel', function (e) {
+            e.preventDefault();
+            var delta = e.originalEvent.deltaX;
+            var direction = delta > 0 ? 1 : -1; // 1 = scroll right, -1 = scroll left
+            var newPosition = currentPosition - (slideWidth * direction) / 15;
+
+            if (newPosition < 0 && newPosition > sliderr.width() - slidess.width()) {
+                currentPosition = newPosition;
+                slidess.css('transform', 'translateX(' + currentPosition + 'px)');
+            }
+        });
+    });
+
+
 </script>
 <script>
-    
+    const slider = document.querySelector('.slidess');
+    const slides = document.querySelectorAll('.slidee');
+    const slideWidth = slides[0].clientWidth;
+    let currentSlide = 0;
+    let intervalId;
+
+    function moveSlider() {
+
+        currentSlide = (currentSlide + 1) % (slides.length);
+
+
+
+        slider.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+    }
+
+    intervalId = setInterval(moveSlider, 5000);
+
+    slider.addEventListener('scroll', function () {
+        clearInterval(intervalId);
+    });
+    slider.addEventListener('mouseenter', function () {
+        clearInterval(intervalId);
+    });
+
+    slider.addEventListener('mouseleave', function () {
+        intervalId = setInterval(moveSlider, 5000);
+    });
 </script>
 
+<!--<script>
+    const sliderr = document.querySelector('.sliderr');
+    const slidess = document.querySelector('.slidess');
+    const slideWidth = slider.offsetWidth;
+    let currentIndex = 0;
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % slidess.children.length;
+        slidess.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }, 1000);
+
+    window.addEventListener('scroll', () => {
+        slidess.style.transition = 'none';
+        slidess.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        setTimeout(() => {
+            slidess.style.transition = 'transform 0.5s ease-in-out';
+        }, 100);
+    });
 
 
+</script>-->
+
+<script type="text/javascript">
+
+    // Texture
+    const textureLoader = new THREE.TextureLoader();
+    const normalTexture = textureLoader.load("images/map1.png");
+
+    // Canvas
+    const canvas = document.querySelector("canvas.webgl");
+
+
+    // Scene
+    const scene = new THREE.Scene();
+
+    // Objects
+    const geometry = new THREE.SphereBufferGeometry(0.8, 60, 60);
+
+    // Materials
+    const material = new THREE.MeshStandardMaterial();
+    material.normalMap = normalTexture;
+
+    // Mesh
+    const shape = new THREE.Mesh(geometry, material);
+    scene.add(shape);
+
+    // Lights
+    const pointLight = new THREE.PointLight(0xFFA500, 1);
+    pointLight.position.x = 12;
+    pointLight.position.y = 13;
+    pointLight.position.z = 14;
+    scene.add(pointLight);
+
+    /**
+     * Sizes
+     */
+    const sizes = {
+        width: window.innerWidth,
+        height: window.innerHeight,
+    };
+
+    window.addEventListener("resize", () => {
+        // Update sizes
+        sizes.width = window.innerWidth;
+        sizes.height = window.innerHeight;
+
+        // Update camera
+        camera.aspect = sizes.width / sizes.height;
+        camera.updateProjectionMatrix();
+
+        // Update renderer
+        renderer.setSize(sizes.width, sizes.height);
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    });
+
+    /**
+     * Camera
+     */
+    // Base camera
+    const camera = new THREE.PerspectiveCamera(
+        75,
+        sizes.width / sizes.height,
+        0.1,
+        100
+    );
+    camera.position.x = 0;
+    camera.position.y = 0;
+    camera.position.z = 1.9;
+    scene.add(camera);
+
+    /**
+     * Renderer
+     */
+    const renderer = new THREE.WebGLRenderer({
+        canvas: canvas,
+    });
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    /**
+     * Animate
+     */
+
+    document.addEventListener("mousemove", onDocumentMouseMove);
+
+    let mouseX = 0;
+    let mouseY = 0;
+
+    let targetX = 0;
+    let targetY = 0;
+
+    const windowX = window.innerWidth / 2;
+    const windowY = window.innerHeight / 2;
+
+    function onDocumentMouseMove(event) {
+        mouseX = event.clientX - windowX;
+        mouseY = event.clientY - windowY;
+    }
+
+    const updateShape = (event) => {
+        shape.position.y = window.scrollY * 0.02;
+
+    }
+
+    const clock = new THREE.Clock();
+
+    const tick = () => {
+        targetX = mouseX * 0.002;
+        targetY = mouseY * 0.002;
+        const elapsedTime = clock.getElapsedTime();
+
+        // Update objects
+        shape.rotation.y = 0.5 * elapsedTime;
+
+
+        shape.rotation.y += 0.5 * (targetX - shape.rotation.y);
+        shape.rotation.x += 0.5 * (targetY - shape.rotation.x);
+
+        // Update Orbital Controls
+        // controls.update()
+
+        // Render
+        renderer.render(scene, camera);
+
+        // Call tick again on the next frame
+        window.requestAnimationFrame(tick);
+    };
+
+    tick();
+</script>
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll > 150) {
+                $(".colorr").css("background", "rgb(7, 5, 5)");
+                $(".nav-linkk").css("color", "rgb(255, 255, 255)");
+                console.log(screen.width);
+            }
+
+            else {
+                $(".colorr").css("background", "transparent");
+                $(".nav-linkk").css("color", " rgb(0, 0, 0)");
+            }
+        })
+    })
+
+</script>
+<script>
+    const wrapIt = document.querySelector(".wrapIt");
+    const myCarousel = document.querySelector(".myCarousel");
+    const firstmyCardWidth = myCarousel.querySelector(".myCard").offsetWidth;
+    const arrowBtns = document.querySelectorAll(".wrapIt i");
+    const myCarouselChildrens = [...myCarousel.children];
+
+    let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
+
+    // Get the number of myCards that can fit in the myCarousel at once
+    let myCardPerView = Math.round(myCarousel.offsetWidth / firstmyCardWidth);
+
+    // Insert copies of the last few myCards to beginning of myCarousel for infinite scrolling
+    myCarouselChildrens.slice(-myCardPerView).reverse().forEach(myCard => {
+        myCarousel.insertAdjacentHTML("afterbegin", myCard.outerHTML);
+    });
+
+    // Insert copies of the first few myCards to end of myCarousel for infinite scrolling
+    myCarouselChildrens.slice(0, myCardPerView).forEach(myCard => {
+        myCarousel.insertAdjacentHTML("beforeend", myCard.outerHTML);
+    });
+
+    // Scroll the myCarousel at appropriate postition to hide first few duplicate myCards on Firefox
+    myCarousel.classList.add("no-transition");
+    myCarousel.scrollLeft = myCarousel.offsetWidth;
+    myCarousel.classList.remove("no-transition");
+
+    // Add event listeners for the arrow buttons to scroll the myCarousel left and right
+    arrowBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+            myCarousel.scrollLeft += btn.id == "left" ? -firstmyCardWidth : firstmyCardWidth;
+        });
+    });
+
+    const dragStart = (e) => {
+        isDragging = true;
+        myCarousel.classList.add("dragging");
+        // Records the initial cursor and scroll position of the myCarousel
+        startX = e.pageX;
+        startScrollLeft = myCarousel.scrollLeft;
+    }
+
+    const dragging = (e) => {
+        if (!isDragging) return; // if isDragging is false return from here
+        // Updates the scroll position of the myCarousel based on the cursor movement
+        myCarousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    }
+
+    const dragStop = () => {
+        isDragging = false;
+        myCarousel.classList.remove("dragging");
+    }
+
+    const infiniteScroll = () => {
+        // If the myCarousel is at the beginning, scroll to the end
+        if (myCarousel.scrollLeft === 0) {
+            myCarousel.classList.add("no-transition");
+            myCarousel.scrollLeft = myCarousel.scrollWidth - (2 * myCarousel.offsetWidth);
+            myCarousel.classList.remove("no-transition");
+        }
+        // If the myCarousel is at the end, scroll to the beginning
+        else if (Math.ceil(myCarousel.scrollLeft) === myCarousel.scrollWidth - myCarousel.offsetWidth) {
+            myCarousel.classList.add("no-transition");
+            myCarousel.scrollLeft = myCarousel.offsetWidth;
+            myCarousel.classList.remove("no-transition");
+        }
+
+        // Clear existing timeout & start autoplay if mouse is not hovering over myCarousel
+        clearTimeout(timeoutId);
+        if (!wrapIt.matches(":hover")) autoPlay();
+    }
+
+    const autoPlay = () => {
+        if (window.innerWidth < 800 || !isAutoPlay) return; // Return if window is smaller than 800 or isAutoPlay is false
+        // Autoplay the myCarousel after every 2500 ms
+        timeoutId = setTimeout(() => myCarousel.scrollLeft += firstmyCardWidth, 2000);
+    }
+    autoPlay();
+
+    myCarousel.addEventListener("mousedown", dragStart);
+    myCarousel.addEventListener("mousemove", dragging);
+    document.addEventListener("mouseup", dragStop);
+    myCarousel.addEventListener("scroll", infiniteScroll);
+    wrapIt.addEventListener("mouseenter", () => clearTimeout(timeoutId));
+    wrapIt.addEventListener("mouseleave", autoPlay);
+</script>
 
 </html>

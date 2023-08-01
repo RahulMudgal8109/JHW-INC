@@ -11,12 +11,14 @@
 
     <link rel="stylesheet" href="services.css">
     <link rel="stylesheet" href="popUp.css">
+    <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
 
-        <link rel="icon" href="images/jhw inc 2.png" type="image/icon type">    
+    <link rel="icon" href="images/jhw inc 2.png" type="image/icon type">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -26,19 +28,19 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-            
-       
+
+
 
     <title>JHW INC</title>
     <style>
-             
+
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position:fixed;height: 4rem;">
+    <nav class="navbar navbar-expand-lg navbar-dark colorr" style="position:fixed;height: 4rem;z-index:100000000">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">JHW INC</a>
+            <a class="nav-linkk p-4" href="index.html"><img style="width:7rem;height:3.5rem;" src="images/1 (1).png"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -47,19 +49,20 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ml-left" style="margin-left:25vw;">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link fs-5" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white fs-5" href="about.html">About</a>
+                        <a class="nav-link fs-5" href="about.html">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-white fs-5" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Services
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <ul>
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item d-none" href="#">Action</a></li>
+
                                 <li><a class="dropdown-item" href="services.html">IT for IT People</a></li>
                                 <li><a class="dropdown-item" href="services2.html">IT for Professionals</a></li>
                                 <!--<li><a class="dropdown-item" href="#">Mega Menu Link</a></li>
@@ -70,17 +73,14 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled fs-5">Team</a>
+                        <a class="nav-link fs-5" href="teams.html">Team</a>
                     </li>
-                    <li class="nav-item mar-left me-3" > 
-                        <a class="nav-link text-white fs-5"  href="login.html"><i class="fa fa-user" style="font-size: 1.6rem;" aria-hidden="true"></i></a></li>
-                    
+
+                  
+
                 </ul>
-               
-                <div class="buttons">
-                    <button class="btn-hover color-1"><a href="contact.html" class="fs-5 d-flex justify-content-center"
-                            style="text-decoration: none; color:white;"><i class="fa fa-phone" aria-hidden="true" style="font-size: 1.6remrem;"></i></a></button>
-                </div>
+
+
             </div>
         </div>
     </nav>
@@ -93,7 +93,7 @@
                     <p>From the most basic technical needs to complex issues such as security analysis and network
                         optimization, our experienced team provides industry-leading managed IT services to all of the
                         clients we serve, from small businesses to large government agencies.</p>
-                    <button type="button" class="btn-design mt-5">View Our Services</button>
+                    <a  type="button" href="#carousel-inner" class="btn-design mt-5 d-flex justify-content-center align-items-center" style="text-decoration: none;">View Our Services</a>
                 </div>
             </div>
         </div>
@@ -125,7 +125,7 @@
                         <div class="first-img-text">
                             <h1>Startups</h1>
                             <h2>We help you launch your Idea<br> fast and within budget.</h2>
-                          <a href="#" style="text-decoration: none;">  <button>View More</button></a>
+                            <a href="#" style="text-decoration: none;"> <button>View More</button></a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +133,7 @@
                     <div class="second-img">
                         <div class="second-img-text">
                             <h1>Businesses</h1>
-                            <h2>We help to grow your <br>business  and succeed</h2>
+                            <h2>We help to grow your <br>business and succeed</h2>
                             <a href="#" style="text-decoration: none;"><button>View More</button></a>
                         </div>
                     </div>
@@ -176,16 +176,15 @@
         </div>
 
     </section>-->
-    <div id="carouselExampleIndicators"
-		class="carousel slide servicesWeprovide" data-ride="carousel"
-		data-interval="2000">
+    <div id="carouselExampleIndicators" class="carousel slide servicesWeprovide" data-ride="carousel"
+        data-interval="5000">
         <h1 class="text-center my-3" style="color:white;">Services for IT people:</h1>
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-           
+
         </ol>
         <div class="carousel-inner" id="carousel-inner">
             <div class="carousel-item active ">
@@ -195,13 +194,12 @@
 
                         <div class="col-lg-4 col-12">
                             <div class="servicesWeprovide-logo mt-lg-0 mt-2">
-                                <h2>01</h2>
+                                <h2 >01</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>IT Consulting</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over the
-                                        world with the best IT services in USA.</p>
+                                    <p>As the best IT consulting provider, we combine cutting-edge technologies, proven
+                                        methodologies, and a passion for excellence to provide unrivaled guidance and
+                                        support, enabling our clients to achieve their goals</p>
 
                                 </div>
                                 <div class="icon">
@@ -215,11 +213,9 @@
                                 <h2>02</h2>
                                 <div class="servicesWeprovide-text ">
                                     <h4>SAAS Consulting</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>As the best SaaS provider, we deliver industry-leading software-as-a-service
+                                        solutions that revolutionize businesses, offering scalability, flexibility, and
+                                        seamless integration to optimize operations and drive growth.</p>
 
                                 </div>
                                 <div class="icon">
@@ -232,11 +228,9 @@
                                 <h2>03</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>24 x 7 Remote Monitoring.</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over
-                                        the
-                                        world with the best IT services in USA.</p>
+                                    <p>With our 24/7 remote monitoring services, we provide real-time visibility into
+                                        your critical systems, networks, and applications, allowing us to identify
+                                        anomalies and take immediate action.</p>
 
                                 </div>
                                 <div class="icon">
@@ -257,11 +251,9 @@
                                 <h2>04</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Anti Virus ,anti-malware ,anti-ransomware management</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>With our cutting-edge technologies and proactive approach, we stay one step ahead
+                                        of cybercriminals, continuously updating our defenses to combat emerging
+                                        threats. </p>
 
                                 </div>
                                 <div class="icon">
@@ -274,11 +266,10 @@
                                 <h2>05</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Remote Patch Managaement</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over
-                                        the
-                                        world with the best IT services in Argentina.</p>
+                                    <p>With our vigilant monitoring and proactive approach, we stay ahead of patch
+                                        releases and security updates, ensuring timely patch deployment to address known
+                                        vulnerabilities. Our team of experts conducts thorough testing and validation
+                                        before deploying patches, ensuring compatibility and system stability.</p>
 
                                 </div>
                                 <div class="icon">
@@ -292,11 +283,10 @@
                                 <h2>06</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Software licensing management</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>We recognize that software licensing can be a daunting task, with various
+                                        compliance requirements, vendor agreements, and ever-changing licensing models.
+                                        That's why we offer a comprehensive range of services to help organizations
+                                        efficiently manage their software licenses.</p>
 
                                 </div>
                                 <div class="icon">
@@ -315,11 +305,11 @@
                                 <h2>07</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>IT asset management and reporting</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over
-                                        the
-                                        world with the best IT services in Argentina.</p>
+                                    <p>Our comprehensive IT Asset Management solutions encompass the entire lifecycle
+                                        of IT assets, from procurement to retirement. We leverage cutting-edge
+                                        technologies and industry best practices to provide a holistic view of an
+                                        organization's IT infrastructure, allowing our clients to gain full visibility
+                                        and control over their assets.</p>
 
                                 </div>
                                 <div class="icon">
@@ -333,11 +323,9 @@
                                 <h2>08</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>PC performance tuning</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>Our team of skilled technicians possesses extensive knowledge and experience in
+                                        diagnosing and resolving performance issues across a wide range of computer
+                                        systems. </p>
 
                                 </div>
                                 <div class="icon">
@@ -351,11 +339,11 @@
                                 <h2>09</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Office 365 Administration</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over
-                                        the
-                                        world with the best IT services in Argentina.</p>
+                                    <p>Our team of experienced administrators possesses in-depth knowledge of Office
+                                        365's features, capabilities, and administrative controls. We offer a wide range
+                                        of services designed to streamline and optimize the administration of Office
+                                        365.
+                                    </p>
 
                                 </div>
                                 <div class="icon">
@@ -374,11 +362,10 @@
                                 <h2>10</h2>
                                 <div class="servicesWeprovide-text ">
                                     <h4>Business System Evalution</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>We understand that a well-implemented and streamlined business system is
+                                        essential for productivity, collaboration, and overall success. That's why our
+                                        team of experts conducts comprehensive evaluations to analyze your existing
+                                        systems, workflows, and processes.</p>
 
                                 </div>
                                 <div class="icon">
@@ -391,11 +378,10 @@
                                 <h2>11</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Internet Service Provider liasion</h4>
-                                    <p>JHW INC has the best IT experts and talent working tirelessly to bring businesses
-                                        all
-                                        over
-                                        the
-                                        world with the best IT services in Argentina.</p>
+                                    <p>We have in-depth knowledge of the ISP industry, its technologies, and the
+                                        services offered by various providers. We leverage this expertise to ensure that
+                                        our clients have access to the best possible internet solutions tailored to
+                                        their specific needs.</p>
 
                                 </div>
                                 <div class="icon">
@@ -409,11 +395,9 @@
                                 <h2>12</h2>
                                 <div class="servicesWeprovide-text">
                                     <h4>Unlimited Help Desk</h4>
-                                    <p>Our work doesn’t just end after building your software for you. We continue
-                                        working
-                                        with
-                                        all
-                                        our customers to provide high-quality and dedicated support</p>
+                                    <p>we provide unparalleled support and assistance to businesses and individuals,
+                                        ensuring that their technology-related issues and concerns are addressed
+                                        promptly and effectively.</p>
 
                                 </div>
                                 <div class="icon">
@@ -428,46 +412,26 @@
 
         </div>
 
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev" >
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next" >
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
 
 
-    
 
 
 
-    <section class="consult">
-        <div class="container">
-            <div class="row consult-r">
-                <div class="col-md-6 col-12 consult-text">
-                    <h2>Start the conversation with a free 10-minute consultation</h2>
-                    <p>Let’s discuss IT strategy, services, and business solutions. Or any other high-priority
-                        technology and compliance concerns.
 
-                        We look forward to learning about your organization, sharing our process, and providing
-                        value,
-                        early and often. We’re here to help.
 
-                    </p>
-                    <button class="theme-btn btn-style-three mt-5"><span class="txt">Book Now</span></button>
-                </div>
-                <div class="col-md-6 col-0 consult-img">
-                    <img src="images/Consult.webp" class="img-fluid d-md-block d-none">
-                </div>
-            </div>
-        </div>
-    </section>
 
-    
 
-    <section class="differnt-services p-5">
+
+    <!-- <section class="differnt-services p-5">
         <div class="container">
             <div class="row differnt-services-heading">
                 <h3>Managed IT Service Providers</h3>
@@ -491,7 +455,7 @@
                 </div>
                 <div class="col-md-2 col-0"></div>
 
-                <!--<div class="col-lg-3 col-md-6 col-12 differnt-services-content">
+                <div class="col-lg-3 col-md-6 col-12 differnt-services-content">
                     <img src="images/services-sec-1.png">
                     <h3><strong>IT for IT People</strong></h3>
                     <p>We work with your in-house IT department to add capacity and allow you to focus on the big
@@ -517,11 +481,11 @@
                     <p>We work with your in-house IT department to add capacity and allow you to focus on the big
                         picture. </p>
                     <a href="services.html" style="text-decoration:none;">Learn More</a>
-                </div>-->
+                </div>
             </div>
         </div>
     </section>
-    <!--<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up"></i></button>
     
     <section class="pop-window">
         <input type="checkbox" id="check"> <label class="chat-btn" for="check"> <i
@@ -538,19 +502,19 @@
                 <button class="btn btn-success btn-block">Submit</button>
             </div>
         </div>
-    </section>-->
+    </section>
     <section class="it-solutions p-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-12  ">
                     <ul>
                         <li class="nav-label m-2">Solutions</li>
-                        <!--<li class="nav-items  m-2">Overview</li>-->
-                        <!-- <li class="nav-items  m-2">For NonProfits</li>-->
-                        <!--<li class="nav-items  m-2">For Creative</li>-->
+                        <li class="nav-items  m-2">Overview</li>
+                         <li class="nav-items  m-2">For NonProfits</li>
+                        <li class="nav-items  m-2">For Creative</li>
                         <li class="nav-items-active  m-2"><a href="#" style="color: black; text-decoration: none;">IT
                                 Solutions for IT People</a></li>
-                        <!--<li class="nav-items m-2">For Professionals</li>-->
+                        <li class="nav-items m-2">For Professionals</li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-12 it-solutions-content">
@@ -600,7 +564,7 @@
                             </ul>
 
                         </div>
-                        <!---- <div class="col-md-6 col-12">
+                         <div class="col-md-6 col-12">
                             <h6 class="fs-3">How can we help?</h6>
                             <form id="login" name="login" action="dashboard" method="post">
                                 <div class="container connect-form py-3">
@@ -642,7 +606,7 @@
                                     <a href="#" style="text-decoration:none;">Learn More</a>
                                 </div>
                             </form>
-                        </div>-->
+                        </div>
                     </div>
                     <hr>
                 </div>
@@ -718,7 +682,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
     <section class="services-content p-5">
         <div class="container">
             <div class="row">
@@ -744,82 +708,92 @@
             </div>
         </div>
     </section>
-    
 
 
 
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Company</li>
-                        <li class="ft">About</li>
-                        <li class="ft">Resources</li>
-                        <li class="ft">Carrer</li>
-                        <li class="ft">Contact</li>
 
-                    </ul>
+    <footer style="margin-top: 10rem;">
+        <div class="container-footer w-container p-5">
+            <div class="w-row">
+                <div class="footer-column w-clearfix w-col w-col-4">
+                    <h3 class="footer-failory-name">Jhw Inc</h3>
+                    <p class="footer-description-failory"> <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">About
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Resources
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Career
+                                <br></span></a>
+                        <a href="" target="_blank"><span class="footer-link">Company
+                                <br></span></a>
+                    </p>
                 </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Support</li>
-                        <li class="ft">Client portal</li>
-                        <li class="ft">Billing Portal</li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Location</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service</li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft fs-md-1 ">Location</li>
-                        <li class="ft ft fs-md-5 ">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-                        <li class="ft">It Service </li>
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <ul>
-                        <li class="ft">Lets chat</li>
-                        <li class="ft">Email us</li>
-                        <li class="ft">Follow BlackPoint</li>
-
-
-                    </ul>
-                </div>
-                <div class="col-md-2 col-6">
-                    <h4 class="ft">Join our mailing list</h4>
-                    <input type="email" placeholder="Email Address"
-                        style="border-radius:50px;height: 10px;width: 160px;">
-
+                <div class="footer-column w-col w-col-8">
+                    <div class="w-row">
+                        <div class="w-col w-col-8">
+                            <div class="w-row">
+                                <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                                    <h3 class="footer-titles">Learn</h3>
+                                    <p class="footer-links"><a href="" target="_blank"><span class="footer-link">Failed
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Successful
+                                                Startups<br></span></a>
+                                        <a href=""><span class="footer-link">Blog</span></a>
+                                        <span><br></span><a href=""><span class="footer-link">Entrepreneurial
+                                                Tools<br></span></a>
+                                        <a href=""><span class="footer-link">Startup Cemetery<br></span></a>
+                                        <a href=""><span class="footer-link">Podcast</span></a><strong><br></strong>
+                                    </p>
+                                </div>
+                                <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                                    <h3 class="footer-titles">Other</h3>
+                                    <p class="footer-links"><a href="contact.html"><span class="footer-link">Contact Us
+                                                <br></span></a><a href=""><span class="footer-link">Open
+                                                Startup<br></span></a><a href=""><span class="footer-link"></span></a><a
+                                            href=""><span class="footer-link">Contribute<br></span></a><a href=""><span
+                                                class="footer-link">FAQ</span></a><strong><br></strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column-center-mobile w-col w-col-4">
+                            <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg"
+                                    width="20" alt="Twitter icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg"
+                                    width="20" alt="Instagram icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg"
+                                    width="20" alt="Facebook Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg"
+                                    width="20" alt="LinkedIn Icon"></a><a href="" target="_blank"
+                                class="footer-social-network-icons w-inline-block"><img
+                                    src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg"
+                                    width="20" alt="Pinterest Icon" class=""></a>
+                            <p class="footer-description">Email me at: <a href=""><strong
+                                        class="link-email-footer">Lorem Ipsum</strong></a><br></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+
     </footer>
-   
 </body>
-<script type="text/javascript" src="common.js"></script>  
+<script type="text/javascript" src="common.js"></script>
 <script>
 
 
-        $(".hover").mouseleave(
-            function () {
-                $(this).removeClass("hover");
-            }
-        );
+    $(".hover").mouseleave(
+        function () {
+            $(this).removeClass("hover");
+        }
+    );
 
-    </script>
+</script>
 <script>
     window.onbeforeunload = function () {
         window.scrollTo(0, 0);
@@ -828,14 +802,14 @@
 
 <script>
     $("#carousel-inner").slick({
-    arrows: false,
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 100,
-    mobileFirst: true
-});
+        arrows: false,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 100,
+        mobileFirst: true
+    });
 </script>
 
 

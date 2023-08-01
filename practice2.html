@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onSubmit="return formSubmitted()">
+        <ul class="min__range">
+        <li>11</li>
+        <li>22</li>
+        <li>33</li>
+        </ul>
+        <button>Submit</button>
+        </form>
+
+
+        <script>
+            var selected = '';
+var amount__list = document.querySelectorAll('.min__range li');
+amount__list.forEach((item, index) => {
+    item.addEventListener('click', (event) => {
+        selected = event.currentTarget.innerHTML;
+       console.log(`Min amount is ${event.currentTarget.innerHTML}`);
+    });
+   
+  })
+  
+function formSubmitted(){
+  console.log("selected is ",selected);
+  return false;
+}
+        </script>
+</body>
+</html>p

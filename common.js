@@ -1,3 +1,8 @@
+//function to take on the top on refresh
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
     // Get the button
     let mybutton = document.getElementById("myBtn");
@@ -18,4 +23,26 @@
       document.body.scrollTop = 0;
       document.documentElement.scrollTop = 0;
     }
+
+
+    //navbar color change on scroll
+
+    $(document).ready(function(){
+      $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 150) {
+          $(".colorr").css("background" , "rgb(7, 5, 5)");
+         
+        }
+    
+        else{
+          $(".colorr").css("background" , "transparent");  	
+         
+        }
+      })
+    })
+
+   
+   
+
     

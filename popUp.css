@@ -5,6 +5,12 @@ box-sizing: border-box;
   color: yellow;
   background: purple;
 }
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
 .chat-btn {
     position: absolute;
     position: fixed;
@@ -38,7 +44,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    background-color: blue;
+    background-color: rgb(14, 14, 22);
     color: #fff;
     font-size: 22px;
     border: none
@@ -54,7 +60,50 @@ box-sizing: border-box;
     border-radius: 5px;
     opacity: 0;
     transition: all 0.4s;
-    z-index: 1;
+    z-index: 10;
+  }
+  .formm
+  {
+    width:16rem;
+    height: 3rem;
+    padding: 0px !important;
+    z-index: 10;
+  }
+  textarea{
+    min-height: 4rem!important;
+
+  }
+  textarea .formm{
+    width:16rem;
+    height: 1rem;
+    padding: 0px !important;
+   
+
+  }
+  @media only screen and (max-width:900px)
+  {
+    .wrapper
+    {
+      width: 12rem;
+      height: 16rem; 
+    } 
+    .formm
+    {
+      width:10rem;
+      height: 2rem;
+      padding: 0px !important;
+    }
+    textarea{
+      min-height: 2.5rem!important;
+  
+    }
+    textarea .formm{
+      width:16rem;
+      
+      padding: 0px !important;
+     
+  
+    }
   }
   
   
@@ -87,7 +136,7 @@ box-sizing: border-box;
   .btn:focus,
   .btn:hover {
     background-color: blue;
-    border: blue
+    border: blue;
   }
   #check {
     display: none !important
@@ -99,10 +148,17 @@ box-sizing: border-box;
   }
   .mar-left
   {
-    margin-left: 20vw;
+    margin-left: 30vw;
   }
   
-  @media only screen and (max-width:1300px)
+  @media only screen and (max-width:1300px) and (min-width:991.98px)
+  {
+    .mar-left{
+      margin-left: 15vw;
+    }
+    
+  }
+  @media only screen and  (max-width:991.98px)
   {
     .mar-left{
       margin-left: 0vw;
@@ -258,4 +314,110 @@ box-sizing: border-box;
 .btn-style-three .txt {
     position: relative;
     z-index: 1;
+}
+
+/* nav link color*/
+.nav-link {
+  color: white!important;
+  font-size: 1.3rem !important;
+  font-weight: 500 !important;
+  font-family: Georgia, 'Times New Roman', Times, serif !important;
+}
+
+/* by default color of the navbar*/
+.colorr{
+ 
+    position:fixed;
+    top:0;
+    background:transparent;
+    width:100%;
+    height:50px;
+   
+}
+
+/*Common cards css*/
+.snip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*customer review cards css*/
+.upper-class{
+  height: 400px;
+  width: 320px;
+  position: relative;
+  transform-style: preserve-3d;
+ perspective: 1000px;
+}
+.upper-class .card{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  transform: translateY(0deg);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.1);
+  transition: transform 0.7s cubic-bezier(0.4,0.2,0.2,1);
+}
+.upper-class:hover  .front-face{
+  transform: rotateY(-180deg);
+}
+.upper-class .card img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.upper-class .back-face{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  transform: rotateY(180deg);
+}
+.upper-class:hover .back-face{
+  transform: rotateY(0deg);
+}
+.upper-class .back-face img{
+  height: 150px;
+  width: 150px;
+  padding: 5px;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+}
+.upper-class .back-face .info{
+  text-align: center;
+}
+.back-face .info .title{
+  font-size: 30px;
+  font-weight: 500;
+}
+.back-face ul{
+  display: flex;
+}
+.back-face ul a{
+  display: block;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  text-align: center;
+  margin: 0 5px;
+  line-height: 38px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: linear-gradient(375deg, #1cc7d0, #2ede98);
+  transition: all 0.5s ease;
+}
+.back-face ul a:hover{
+  color: #1cc7d0;
+  border-color: #1cc7d0;
+  background: linear-gradient(375deg, transparent, transparent);
+}
+
+.title p{
+  font-size: 15px;
 }
